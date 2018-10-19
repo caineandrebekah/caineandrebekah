@@ -1,0 +1,53 @@
+.button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 25px;
+    min-width: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.stretch-button {
+    display: block;
+}
+
+.text-button {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-red {
+    background-color: red;
+}
+
+.button-red:hover {
+
+}
+
+.button-green {
+    background-color: green;
+}
+
+.button-green:hover {
+
+}
+
+.button-blue {
+    background-color: blue;
+}
+
+.button-blue:hover {
+
+}

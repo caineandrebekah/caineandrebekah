@@ -1,0 +1,14 @@
+.color-section {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    overflow: hidden;
+}

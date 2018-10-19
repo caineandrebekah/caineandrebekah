@@ -1,0 +1,77 @@
+  #home {
+    background-position: bottom;
+    background-image: url("/resources/images/grains.jpg");
+    padding: 0px;
+  }
+
+  #title {
+    transition: all 0.5s 0s;
+    font-size: 5vw;
+    line-height: 50vh;
+    border: 5px solid white;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 50vh;
+      width: 60vw;
+      margin: -25vh 0 0 -30%;
+    overflow: hidden;
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  #title:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: all 1s 0.5s;
+  }
+
+  #dove {
+    color: white;
+    transition: all 1s;
+    font-size: 1.5vw;
+    position: relative;
+      bottom: 4vw;
+      left: 1vw;
+  }
+
+  #arrow-container {
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+      bottom: 2vh;
+  }
+  
+  #arrow {
+    color: white;
+    font-size: 6vh;
+  }
+
+  #footer {
+    background-color: black;
+  }
+
+  #footer .section-content-container{
+    background-color: black;
+    color: white;
+  }
+
+  #footer a {
+    color: white;
+  }
+
+  .tag {
+    display: inline;
+    border: 1px solid;
+    border-radius: 1em;
+    white-space: nowrap;
+    padding: 1px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    line-height: 2em;
+  }
+
+  .tag:hover {
+    background-color: lightgreen;
+  }

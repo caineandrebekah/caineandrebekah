@@ -1,0 +1,183 @@
+.product-container {
+display: inline-block;
+vertical-align: top;
+user-select: none;
+}
+
+.product-selector {
+margin: 20px; 
+display: inline-block;
+box-sizing: border-box;
+border: 5px solid grey;
+border-radius: 25px;
+width: 50px;
+height: 50px;
+font-size: 50px;
+transition: all .15s ease-in-out;
+}
+
+.product-selector:hover {
+transform: scale(1.15);
+}
+
+.product-selector i {
+padding-bottom: 20px;
+color: #1B5E20;
+position: relative;
+bottom: 10px;
+display: none;
+}
+
+.product {
+width: 15vw;
+border-radius: 10px;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+overflow: hidden;
+transition: all .15s ease-in-out;
+box-shadow: 0px 2px 5px .5px lightgrey;
+}
+
+.product:hover {
+transform: scale(1.10);
+box-shadow: 0px 6px 20px 5px lightgrey;
+}
+
+.product-clicked {
+border: 5px solid #81C784;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+transform: scale(0.85);
+box-shadow: none;
+}
+
+.product-clicked:hover {
+transform: scale(0.90);
+box-shadow: none;
+}
+
+.product-image {
+background-repeat: no-repeat;
+background-size: 100% 100%;
+transition: all .15s ease-in-out;
+background-color: lightgrey;
+}
+
+.product-image i {
+text-align: center;
+color: white;
+font-size: 6vw;
+line-height: 150%;
+margin: 0px auto;
+}
+
+.product-detail {
+padding: 20px;
+text-align: left;
+color: black;
+}
+
+.product:hover .product-image {
+border-bottom: 5px solid;
+}
+
+.product-detail h2 {
+text-align: center;
+}
+
+i {
+transition: all .15s ease-in-out;
+}
+
+.product:hover i {
+transform: scale(1.05);
+}
+
+#product-1 {
+color: #FFCDD2;
+}
+
+#product-2 {
+color: #BBDEFB;
+}
+
+#product-3 {
+color: #C8E6C9;
+}
+
+#product-4 {
+color: #FFECB3;
+}
+
+#product-5 {
+color: #D1C4E9;
+}
+
+
+
+
+
+#product-image-1 {
+/*background-image: url("https://i.imgur.com/qtZ7nbG.jpg");*/
+background-color: #E53935;
+border-bottom-color: #B71C1C;
+}
+
+#product-image-2 {
+/*background-image: url("https://i.imgur.com/8ydiEJI.jpg");*/
+background-color: #1E88E5;
+border-bottom-color: #01579B;
+}
+
+#product-image-3 {
+/*background-image: url("https://i.imgur.com/iQDK46v.jpg");*/
+background-color: #43A047;
+border-bottom-color: #1B5E20;
+}
+
+#product-image-4 {
+/*background-image: url("https://i.imgur.com/z02OEb0.jpg");*/
+background-color: #FFB300;
+border-bottom-color: #FF6F00;
+}
+
+#product-image-5 {
+/*background-image: url("https://i.imgur.com/z02OEb0.jpg");*/
+background-color: #3949AB;
+border-bottom-color: #311B92;
+}
+
+
+
+
+
+
+
+
+#product-detail-1 {
+
+background-color: #FFEBEE;
+}
+
+#product-detail-2 {
+
+background-color: #E3F2FD;
+}
+
+#product-detail-3 {
+
+background-color: #E8F5E9;
+}
+
+#product-detail-4 {
+
+background-color: #FFF8E1;
+}
+
+#product-detail-5 {
+
+background-color: #E8EAF6;
+}
