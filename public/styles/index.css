@@ -70,7 +70,6 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
       background: black;
-      border-right: 1px solid white;
   }
   
   /* Handle on hover */
