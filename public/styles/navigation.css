@@ -1,12 +1,29 @@
 .navigation-bar {
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.horizontal-nav-bar {
+  z-index: 95;
   height: 70px;
   width: 100vw;
-  box-sizing: border-box;
-  text-align: center;
-  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+  position: fixed;
+    top: 0px;
+}
+
+.verticle-nav-bar {
   z-index: 96;
   position: fixed;
     top: 0px;
+    left: 0px;
+}
+
+#accent-nav-bar {
+  text-align: center;
+}
+
+#no-accent-nav-bar {
+  background-color: white;
 }
 
 #navigation-item-list {
@@ -17,6 +34,7 @@
 
 .navigation-item {
   display: inline-block;
+  text-align: center;
   font-size: 24px;
   width: 15%;
   line-height: 65px;
@@ -33,27 +51,41 @@
   border-top: 5px solid;
 }
 
-#navigation-bar-default {
-  color: black;
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+#accent-nav-bar .navigation-item {
+  color: white;
 }
 
-#navigation-bar-default .navigation-item {
+#no-accent-nav-bar .navigation-item {
   color: black;
 }
 
 @media only screen and (orientation: landscape) {
   .navigation-bar {
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+  }
+  
+  .horizontal-nav-bar {
+    z-index: 95;
     height: 70px;
     width: 100vw;
-    box-sizing: border-box;
-    text-align: center;
-    overflow: hidden;
-    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
-    z-index: 1;
     position: fixed;
       top: 0px;
+  }
+  
+  .verticle-nav-bar {
+    z-index: 96;
+    position: fixed;
+      top: 0px;
+      left: 0px;
+  }
+  
+  #accent-nav-bar {
+    text-align: center;
+  }
+  
+  #no-accent-nav-bar {
+    background-color: white;
   }
   
   #navigation-item-list {
@@ -100,13 +132,11 @@
     content: "  Contact";
   }
   
-  #navigation-bar-default {
-    color: black;
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  #accent-nav-bar .navigation-item {
+    color: white;
   }
-  
-  #navigation-bar-default .navigation-item {
+
+  #no-accent-nav-bar .navigation-item {
     color: black;
   }
 }
