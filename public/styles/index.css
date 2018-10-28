@@ -15,90 +15,89 @@ html {
 }
 
 body {
-    width: 100vw;
-    overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
-  }
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
   
-  h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    text-align: center;
-  }
-  
-  h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
-  }
-  
-  p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: green;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: green;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: green;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: green;
-  }
-  
-  /* width */
-  ::-webkit-scrollbar {
-      width: 10px;
-      
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    display: none;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-      background: black;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-      background: #555; 
-  }
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
 
-  i {
-    transition: transform .5s;
-  }
-  
-  i:hover {
-    transform: scale(1.2);
-  }
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
 
-  .unselect {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-  }
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
 
-  .left {
-    text-align: left;
-  }
+a:link {
+  text-decoration: none;
+  color: green;
+}
 
-  .center {
-    text-align: center;
-  }
+a:visited {
+  text-decoration: none;
+  color: green;
+}
 
-  .right {
-    text-align: right;
-  }
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+a:active {
+  text-decoration: none;
+  color: green;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+i {
+  transition: transform .5s;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+.unselect {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
