@@ -2,19 +2,27 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   var navItem = document.getElementsByClassName("navigation-item");
+  var navNoAccent = document.getElementById("no-accent-nav-bar");
+  var navAccent = document.getElementById("accent-nav-bar");
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.getElementById("navigation-bar-index").style.backgroundColor = "white";
-    document.getElementById("navigation-bar-index").style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
-
+    if (document.body.contains(navAccent)) {
+      navAccent.style.backgroundColor = "white";
+      navAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+    } else if (document.body.contains(navNoAccent)) {
+      navNoAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+    }
     for (var i = 0; i < navItem.length; i++) {
       navItem[i].style.color = "black";
     }
   } else {
-    document.getElementById("navigation-bar-index").style.backgroundColor = "";
-    document.getElementById("navigation-bar-index").style.boxShadow = "";
-
-    for (var i = 0; i < navItem.length; i++) {
-      navItem[i].style.color = "white";
+    if (document.body.contains(navAccent)) {
+      navAccent.style.backgroundColor = "";
+      navAccent.style.boxShadow = "";
+      for (var i = 0; i < navItem.length; i++) {
+        navItem[i].style.color = "white";
+      }
+    } else if (document.body.contains(navNoAccent)) {
+      navNoAccent.style.boxShadow = "";
     }
   }
 }
