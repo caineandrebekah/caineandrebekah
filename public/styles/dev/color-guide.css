@@ -1,7 +1,6 @@
 .color-section {
     height: 100px;
     width: 100%;
-    overflow: hidden;
 }
 
 .color-box {
@@ -11,4 +10,10 @@
     text-align: center;
     line-height: 100px;
     overflow: hidden;
+}
+
+.color-box:hover {
+    transform: scale(2);
+    transition: all 0.5s;
+    box-shadow: 0px 2px 5px .5px black;
 }
