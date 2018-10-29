@@ -51,12 +51,16 @@
   border-top: 5px solid;
 }
 
+.navigation-item:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 #accent-nav-bar .navigation-item {
   color: white;
 }
 
 #no-accent-nav-bar .navigation-item {
-  color: black;
+  color: #212121;
 }
 
 @media only screen and (orientation: landscape) {
@@ -137,7 +141,7 @@
   }
 
   #no-accent-nav-bar .navigation-item {
-    color: black;
+    color: #212121;
   }
 }
 

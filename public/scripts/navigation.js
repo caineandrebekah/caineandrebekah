@@ -12,7 +12,7 @@ function scrollFunction() {
       navNoAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
     }
     for (var i = 0; i < navItem.length; i++) {
-      navItem[i].style.color = "black";
+      navItem[i].style.color = "#212121";
     }
   } else {
     if (document.body.contains(navAccent)) {
