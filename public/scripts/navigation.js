@@ -4,7 +4,9 @@ function scrollFunction() {
   var navItem = document.getElementsByClassName("navigation-item");
   var navNoAccent = document.getElementById("no-accent-nav-bar");
   var navAccent = document.getElementById("accent-nav-bar");
+  var UpArrow = document.getElementById("dot-pagetop");
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    UpArrow.style.display = "block";
     if (document.body.contains(navAccent)) {
       navAccent.style.backgroundColor = "white";
       navAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
@@ -15,6 +17,7 @@ function scrollFunction() {
       navItem[i].style.color = "#212121";
     }
   } else {
+    UpArrow.style.display = "none";
     if (document.body.contains(navAccent)) {
       navAccent.style.backgroundColor = "";
       navAccent.style.boxShadow = "";

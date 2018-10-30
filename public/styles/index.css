@@ -63,7 +63,8 @@ a:active {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  display: none;
+  background: rgba(255, 255, 255, 1);
+  z-index: 20;
 }
 
 /* Handle */

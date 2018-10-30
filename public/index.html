@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="/styles/navigation.css" type="text/css">
         <link rel="stylesheet" href="/styles/prompt.css" type="text/css">
         <link rel="stylesheet" href="/styles/blocks.css" type="text/css">
+        <link rel="stylesheet" href="/styles/dot.css" type="text/css">
         <link rel="stylesheet" href="/styles/footer.css" type="text/css">
         <link rel="stylesheet" href="/styles/sections.css" type="text/css">
         <link rel="stylesheet" href="/styles/gallery/gallery.css" type="text/css">
@@ -37,6 +38,7 @@
         <!--Example of an External JS Function-->
         <script src="/scripts/contentLoad.js"></script>
         <script src="/scripts/navigation.js"></script>
+        <script src="/scripts/dot.js"></script>
         <script src="/scripts/navigation/prompt.js"></script>
         <!--Embedded CSS Stylesheet-->
         <style type="text/css">
@@ -158,10 +160,18 @@
                     <p>This is an example.</p>
                 </div>
             </div>
+
+            <div title="Menu" class="dot dot-large" id="dot-nav"><i class="fas fa-align-right"></i></div>
+            <div title="Account" class="dot dot-medium" id="dot-help"><i class="far fa-user-circle"></i></div>
+            <div onClick="promptMaintenance();" title="Notice" class="dot dot-medium" id="dot-alert"><i class="fas fa-exclamation"></i></i></div>
+            <div title="Help" class="dot dot-medium" id="dot-account"><i class="far fa-question-circle"></i></div>
+            <a href="#home"><div title="To the top" class="dot dot-small" id="dot-pagetop"><i class="fas fa-arrow-up"></i></i></div></a>
             
         </div>
 
-        <!--<script>promptMaintenance();</script>-->
+
+
+
         <div id="prompt-loader"></div>
         <footer class="section-center block-section" id="footer"></footer>
         <!--Only run Javascript once the page has fully finished loading.-->

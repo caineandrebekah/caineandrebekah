@@ -1,0 +1,156 @@
+.dot {
+    display: block;
+    z-index: 70;
+    transition: all .5s;
+    position: fixed;
+        bottom: 0px;
+        right: 0px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: grey;
+    border-radius: 50%;
+    border: solid 1px grey;
+    -webkit-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.dot:hover i {
+    transform: scale(1.2);
+}
+
+.dot-large {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    line-height: 70px;
+    font-size: 28px;
+}
+
+.dot-medium {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    line-height: 50px;
+    display: none;
+    font-size: 24px;
+}
+
+.dot-small {
+    width: 30px;
+    height: 30px;
+    margin: 40px;
+    line-height: 30px;
+    display: none;
+    font-size: 16px;
+}
+
+#dot-nav {
+    color: #212121;
+    opacity: 0.5;
+    background-color: white;
+    border: solid 1px lightgrey;
+    z-index: 71;
+}
+
+#dot-nav:hover {
+    opacity: 1;
+}
+
+#dot-pagetop:hover {
+    opacity: 1;
+}
+
+#dot-help {
+    background-color: #2196F3;
+    border: solid 1px #2196F3;
+    -webkit-animation: dotLaunch1 0.5s; /* Safari 4.0 - 8.0 */
+    animation: dotLaunch1 0.5s;
+        bottom: 90px;
+        right: 0px;
+}
+
+#dot-alert {
+    background-color: #FF5722;
+    border: solid 1px #FF5722;
+    -webkit-animation: dotLaunch2 0.5s; /* Safari 4.0 - 8.0 */
+    animation: dotLaunch2 0.5s;
+        bottom: 160px;
+        right: 0px;
+}
+
+#dot-account {
+    background-color: #4CAF50;
+    border: solid 1px #4CAF50;
+    -webkit-animation: dotLaunch3 0.5s; /* Safari 4.0 - 8.0 */
+    animation: dotLaunch3 0.5s;
+        bottom: 230px;
+        right: 0px;
+}
+
+#dot-pagetop {
+    background-color: #212121;
+    border: solid 1px #212121;
+    opacity: 0.5;
+    color: white;
+    -webkit-animation: dotLaunch4 0.5s; /* Safari 4.0 - 8.0 */
+    animation: dotLaunch4 0.5s;
+        bottom: 50px;
+        right: 50px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dotLaunch1 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes dotLaunch1 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dotLaunch2 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes dotLaunch2 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dotLaunch3 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes dotLaunch3 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dotLaunch4 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes dotLaunch4 {
+    from {bottom: 0%;}
+    top {bottom: 100%;}
+}
+
+
+
