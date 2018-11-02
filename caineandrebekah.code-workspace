@@ -7,5 +7,7 @@
 			"path": "functions"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "functions"
+	}
 }
