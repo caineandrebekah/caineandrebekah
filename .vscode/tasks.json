@@ -4,10 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "npm",
-            "script": "deploy",
-            "path": "functions/",
-            "problemMatcher": []
+            "label": "Firebase Deploy",
+            "type": "shell",
+            "command": "firebase deploy --only hosting,functions",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
