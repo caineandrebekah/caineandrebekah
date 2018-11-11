@@ -138,7 +138,7 @@
   height: 500px;
   overflow: hidden;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   box-sizing: border-box;
   background-image: url("/resources/images/park-bridge.jpg");
 }
