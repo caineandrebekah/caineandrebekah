@@ -89,6 +89,7 @@
             </header>
             
             <div class="section-center block-section" id="home" onmouseover="hoverTrigger(home);">
+                <div class="overlay-50"></div>
                 <h1 id="title" class="unselect">Caine and<i class="fas fa-dove" id="dove"></i>Rebekah</h1>
                 <div id="arrow-container">
                 <a href="#about"><i class="fas fa-angle-double-down" id="arrow"></i></a>
@@ -97,21 +98,27 @@
             
             <div class="section-center block-section" id="about"  name="about" onmouseover="hoverTrigger(about);">
                 <div class="section-content-container">
-                    <h1>Every day a jorney, and every night a party.</h1>
-                    <p>Explore what make us happy, and find what makes you happy!</p>
-                
-                    <a href="/store/products.html"><span class="tag">Websites As a Service</span></a>
-                    <a href=""><span class="tag">Music Visualizers</span></a>
-                    <a href=""><span class="tag">Podcasts</span></a>
-                    <a href=""><span class="tag">Members</span></a>
-                    <a href=""><span class="tag">Trailblazing</span></a>
-                    <a href=""><span class="tag">Technology</span></a>
-                    <a href=""><span class="tag">Family</span></a>
-                    <a href=""><span class="tag">Prop 2</span></a>
-                    <a href=""><span class="tag">Singers</span></a>
-                    <a href=""><span class="tag">Minecraft</span></a>
 
-                    <br />
+
+                    <div id="page-intro">
+                        <div id="intro-text">
+                            <div class="overlay-75"></div>
+                            <h1>Every day a journey, and every night a party.</h1>
+                            <p>Explore what make us happy, and find what makes you happy! Looking for our products? Not sure what this is? Cick here.</p>
+
+                            <a href="/store/products.html"><span class="tag">Websites As a Service</span></a>
+                            <a href=""><span class="tag">Music Visualizers</span></a>
+                            <a href=""><span class="tag">Podcasts</span></a>
+                            <a href=""><span class="tag">Members</span></a>
+                            <a href=""><span class="tag">Trailblazing</span></a>
+                            <a href=""><span class="tag">Technology</span></a>
+                            <a href=""><span class="tag">Family</span></a>
+                            <a href=""><span class="tag">Prop 2</span></a>
+                            <a href=""><span class="tag">Singers</span></a>
+                            <a href=""><span class="tag">Minecraft</span></a>
+                        </div><!--
+                        --><div id="ic-1"></div>
+                    </div>
 
                     <div class="block-holder">
                         <h2>It's all about us</h2>
@@ -122,6 +129,8 @@
                         <div class="block block-c"><div class="block-overlay">Christian</div><div class="block-image" id="block-christian"></div></div>
                         <div class="block block-c"><div class="block-overlay">Auryn</div><div class="block-image" id="block-auryn"></div></div>
                     </div>
+
+                    
 
 
 
@@ -140,9 +149,6 @@
                             <a href=""><div class="block block-r"><div class="block-image" id="block-cold-one"></div><div class="block-text">Crackin' a Cold One</div><div class="block-more"></div></div></a>
                             <a href="/blog/favorite-music.html"><div class="block block-r"><div class="block-image" id="block-music"></div><div class="block-text">Good Music</div><div class="block-more"></div></div></a>
                         </div>
-
-                    <div id="demo">
-                        <button type="button" onclick="loadDoc()">Next</button>
                     </div>
                 </div>
             </div>
@@ -158,6 +164,10 @@
                 <div class="section-content-container">
                     <h2>Contact</h2>
                     <p>This is an example.</p>
+                    <button type="button" onclick="loadRoute()">Router</button>
+                    <div id="demoRoute">Waiting...</div>
+                    <button type="button" onclick="loadDoc()">Doc</button>
+                    <div id="demoDoc">Waiting...</div>
                 </div>
             </div>
 

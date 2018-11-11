@@ -18,15 +18,25 @@
       "**/.*",
       "**/node_modules/**"
     ],
-      "redirects": [ {
-    "source" : "/gallery",
-    "destination" : "/gallery/gallery.html",
-    "type" : 301
-  } ],
-      "rewrites": [ {
-    "source": "/blog",
-    "destination": "/blog/blog.html"
-  } ]
+    "redirects": [ {
+      "source": "/index.html",
+      "destination": "https://www.caineandrebekah.com",
+      "type" : 301
+    }, {
+      "source": "/index",
+      "destination": "https://www.caineandrebekah.com",
+      "type" : 301
+    } ],
+    "rewrites": [ {
+      "source": "/example",
+      "destination": "example"
+    }, {
+      "source": "/* //THIS WOULD REDIRECT ALL URLS",
+      "function": "server"
+    }, {
+      "source": "/router",
+      "function": "router"
+    } ]
   },
   "storage": {
     "rules": "storage.rules"

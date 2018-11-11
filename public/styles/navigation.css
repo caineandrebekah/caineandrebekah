@@ -36,7 +36,9 @@
   display: inline-block;
   text-align: center;
   font-size: 24px;
-  width: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: auto;
   line-height: 65px;
   height: 70px;
   white-space: nowrap;
@@ -101,9 +103,11 @@
   .navigation-item {
     display: inline-block;
     font-size: 24px;
-    width: 15%;
     line-height: 65px;
     height: 70px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: auto;
     white-space: nowrap;
     box-sizing: border-box;
     overflow: hidden;

@@ -6,7 +6,7 @@
         {
             "label": "Firebase Deploy",
             "type": "shell",
-            "command": "firebase deploy --only hosting",
+            "command": "firebase deploy --only hosting,functions",
             "group": {
                 "kind": "build",
                 "isDefault": true

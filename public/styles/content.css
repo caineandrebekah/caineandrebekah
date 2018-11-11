@@ -105,3 +105,104 @@
   margin-right: 2vw;
 }
 
+#page-intro {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 20px;
+  height: 500px;
+  box-shadow: 0px 3px 10px 2px grey;
+  background-color: black;
+}
+
+#intro-text {
+  display: inline-block;
+  width: 50%;
+  margin: 0px;
+  height: 500px;
+  position: relative;
+  z-index: 40;
+  background-position: center;
+  box-sizing: border-box;
+  background-image: url("/resources/images/planks.jpg");
+  padding: 5%;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+}
+
+#ic-1 {
+  display: inline-block;
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: right;
+  box-sizing: border-box;
+  background-image: url("/resources/images/park-bridge.jpg");
+}
+
+#ic-2 {
+  
+}
+
+#ic-3 {
+  
+}
+
+#ic-4 {
+  
+}
+
+.overlay-25 {
+  position: absolute;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.25); /* Black background with opacity */
+}
+
+.overlay-25 ~ * {
+  z-index: 2;
+  position: relative;
+}
+
+.overlay-50 {
+  position: absolute;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.overlay-50 ~ * {
+  z-index: 2;
+  position: relative;
+}
+
+.overlay-75 {
+  position: absolute;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+}
+
+.overlay-75 ~ * {
+  z-index: 2;
+  position: relative;
+}
+
