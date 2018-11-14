@@ -1,0 +1,25 @@
+.blog-image {
+    color: white;
+    position: relative;
+    user-select: none;
+}
+
+#blog-image-1 {
+    background-image: url("/resources/images/blog/music.jpg");
+}
+
+#blog-image-2 {
+    background-image: url("/resources/images/blog/technology.jpg");
+}
+
+#blog-image-3 {
+    background-image: url("/resources/images/blog/");
+}
+
+#blog-image-4 {
+    background-image: url("/resources/images/blog/");
+}
+
+#blog-image-5 {
+    background-image: url("/resources/images/blog/");
+}

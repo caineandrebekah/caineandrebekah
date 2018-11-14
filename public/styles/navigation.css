@@ -19,11 +19,23 @@
 }
 
 #accent-nav-bar {
-  text-align: center;
+  
 }
 
 #no-accent-nav-bar {
   background-color: white;
+}
+
+.nav-bar-left {
+  text-align: left;
+}
+
+.nav-bar-right {
+  text-align: right;
+}
+
+.nav-bar-center {
+  text-align: center;
 }
 
 #navigation-item-list {
@@ -87,11 +99,23 @@
   }
   
   #accent-nav-bar {
-    text-align: center;
+    
   }
   
   #no-accent-nav-bar {
     background-color: white;
+  }
+
+  .nav-bar-left {
+    text-align: left;
+  }
+
+  .nav-bar-right {
+    text-align: right;
+  }
+
+  .nav-bar-center {
+    text-align: center;
   }
   
   #navigation-item-list {
