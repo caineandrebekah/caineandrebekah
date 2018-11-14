@@ -4,6 +4,10 @@
     user-select: none;
 }
 
+.blog-content-image {
+    max-width: 80%;
+}
+
 #blog-image-1 {
     background-image: url("/resources/images/blog/music.jpg");
 }
@@ -13,7 +17,7 @@
 }
 
 #blog-image-3 {
-    background-image: url("/resources/images/blog/");
+    background-image: url("/resources/MooseHound/winter.jpg");
 }
 
 #blog-image-4 {
