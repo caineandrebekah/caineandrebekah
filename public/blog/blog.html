@@ -26,7 +26,9 @@
         <link rel="stylesheet" href="/styles/navigation.css" type="text/css">
         <link rel="stylesheet" href="/styles/sections.css" type="text/css">
         <link rel="stylesheet" href="/styles/footer.css" type="text/css">
+        <link rel="stylesheet" href="/styles/items.css" type="text/css">
         <link rel="stylesheet" href="/styles/content.css" type="text/css">
+        <link rel="stylesheet" href="/styles/blog/blog.css" type="text/css">
         <!--Import Google's hosted version of Jquery-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
         <!--Example of an External JS Function-->
@@ -55,7 +57,47 @@
     </head>
     <body>
         <div id="canvas">
-            <!--Add your body content here-->
+
+            <header class="navigation-bar horizontal-nav-bar nav-bar-left" id="accent-nav-bar">
+                <ul id="navigation-item-list">
+                    <a href="/"><li class="navigation-item" id="section-1"><span class="navigation-item-text" id="home-text"><i class="fas fa-arrow-left"></i></i></span></li></a>
+                </ul>
+            </header>
+
+            <section class="section section-half-locked section-center blog-image blog-image-half" id="blog-image-4">
+                    <div class="overlay-50"></div>
+                    <h1>Blog</h1>
+            </section>
+            
+
+            <div class="section section-full-free section-center" id="">
+                <p>When people tell you they have a blog, that is typically when you turn and run, fear not, for this blog is not for the agenda pushing content producer (me), it is for you. Read at your own choice... and discression. Enjoy.</p>
+                <h2>January</h2>
+                <ul class="itemlist">
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE</h3><span class="tag">Example</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE</h3><span class="tag">Example</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE</h3><span class="tag">Example</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE</h3><span class="tag">Example</span></li>
+                </ul>
+                <h1>2019</h1>
+                <h2>December</h2>
+                <ul class="itemlist">
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>???? (Coming Soon)</h3><span class="tag">Goals</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>Old fashion Family Christmas (Coming Soon)</h3><span class="tag">Holiday</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE (Coming Soon)</h3><span class="tag">Example</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>Rebekah's Birthday (Coming Soon)</h3><span class="tag">Birthday</span></li>
+                </ul>
+                <h2>November</h2>
+                <ul class="itemlist">
+                    <li class="item" id="blog-image-3"><div class="overlay-25"></div><h3>Moosehound</h3><span class="tag">Tribal</span> <span class="tag">Banyan</span> <span class="tag">Design</span></li>
+                    <li class="item" id="blog-image-"><div class="overlay-25"></div><h3>EXAMPLE</h3><span class="tag">Example</span></li>
+                    <li class="item" id="blog-image-1"><div class="overlay-25"></div><h3>My Favorite Music</h3><span class="tag">Music</span> <span class="tag">Youtube</span></li>
+                    <li class="item" id="blog-image-2"><div class="overlay-25"></div><h3>Development Resources</h3><span class="tag">Development</span> <span class="tag">Tools</span> <span class="tag">Technology</span></li>
+                </ul>
+            </div>
+
+
+
         </div>
         <div id="prompt-loader"></div>
         <footer class="section section-full-locked section-center" id="footer"></footer>

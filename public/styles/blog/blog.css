@@ -2,6 +2,25 @@
     color: white;
     position: relative;
     user-select: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-image * {
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-image-quarter {
+    line-height: 25vh;
+}
+
+.blog-image-half {
+    line-height: 50vh;
+}
+
+.blog-image-full {
+    line-height: 100vh;
 }
 
 .blog-content-image {
@@ -21,7 +40,7 @@
 }
 
 #blog-image-4 {
-    background-image: url("/resources/images/blog/");
+    background-image: url("/resources/images/blog/grains.jpg");
 }
 
 #blog-image-5 {

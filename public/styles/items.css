@@ -1,0 +1,33 @@
+.itemlist {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; 
+}
+
+.item {
+    min-height: 70px;
+    line-height: 70px;
+    margin-bottom: 35px;
+    user-select: none;
+    text-align: left;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    transition: all 1s;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: translate(20px,0px);
+    -ms-transform: translate(20px,0px); /* IE 9 */
+    -webkit-transform: translate(20px,0px); /* Safari 3-8 */
+}
