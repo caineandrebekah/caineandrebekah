@@ -6,9 +6,7 @@
 
 .item {
     min-height: 70px;
-    line-height: 70px;
     margin-bottom: 35px;
-    user-select: none;
     text-align: left;
     box-sizing: border-box;
     -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
@@ -22,11 +20,22 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    color: white;
+    
     overflow: hidden;
 }
 
-.item:hover {
+.item-blog-post {
+    color: white;
+    user-select: none;
+    line-height: 70px;
+}
+
+.item-setting {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.item-blog-post:hover {
     transform: translate(20px,0px);
     -ms-transform: translate(20px,0px); /* IE 9 */
     -webkit-transform: translate(20px,0px); /* Safari 3-8 */

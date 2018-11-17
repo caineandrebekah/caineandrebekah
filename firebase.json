@@ -19,17 +19,29 @@
       "**/node_modules/**"
     ],
     "redirects": [ {
-      "source": "/index.html",
-      "destination": "https://www.caineandrebekah.com",
+      "source": "/example",
+      "destination": "https://example-website.com",
       "type" : 301
     }, {
-      "source": "/index",
-      "destination": "https://www.caineandrebekah.com",
+      "source": "/example",
+      "destination": "https://example-website.com",
       "type" : 301
     } ],
     "rewrites": [ {
-      "source": "/example",
-      "destination": "example"
+      "source": "/about",
+      "destination": "/about/about.html"
+    }, {
+      "source": "/blog",
+      "destination": "/blog/blog.html"
+    }, {
+      "source": "/gallery",
+      "destination": "/gallery/gallery.html"
+    }, {
+      "source": "/contact",
+      "destination": "/contact/contact.html"
+    }, {
+      "source": "/app",
+      "destination": "/app/app.html"
     }, {
       "source": "/* //THIS WOULD REDIRECT ALL URLS",
       "function": "server"
