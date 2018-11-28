@@ -18,15 +18,36 @@
       "**/.*",
       "**/node_modules/**"
     ],
-      "redirects": [ {
-    "source" : "/gallery",
-    "destination" : "/gallery/gallery.html",
-    "type" : 301
-  } ],
-      "rewrites": [ {
-    "source": "/blog",
-    "destination": "/blog/blog.html"
-  } ]
+    "redirects": [
+      {
+      "source": "/example",
+      "destination": "https://example-website.com",
+      "type" : 301
+      },
+      {
+        "source": "/example",
+        "destination": "https://example-website.com",
+        "type" : 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "responder"
+      },
+      {
+        "source": "/*",
+        "function": "responder"
+      },
+      {
+        "source": "/*/*",
+        "function": "responder"
+      },
+      {
+        "source": "/*/*/*",
+        "function": "responder"
+      }
+    ]
   },
   "storage": {
     "rules": "storage.rules"

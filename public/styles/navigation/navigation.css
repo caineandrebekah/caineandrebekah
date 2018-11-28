@@ -1,0 +1,262 @@
+.navigation-bar {
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.horizontal-nav-bar {
+  z-index: 96;
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+    top: 0px;
+}
+
+.vertical-nav-bar {
+  z-index: 94;
+  position: fixed;
+    top: 0px;
+    left: 0px;
+  height: 100vh;
+  width: 20vw;
+  padding-top:80px;
+}
+
+#accent-nav-bar {
+  
+}
+
+#no-accent-nav-bar {
+  background-color: white;
+}
+
+#app-accent-nav-bar {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#app-accent-nav-bar .navigation-item {
+  color: black;
+}
+
+.nav-bar-left {
+  text-align: left;
+}
+
+.nav-bar-right {
+  text-align: right;
+}
+
+.nav-bar-center {
+  text-align: center;
+}
+
+#navigation-item-list {
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+
+.navigation-item {
+  text-align: center;
+  font-size: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 70px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: color .5s;
+}
+
+.horizontal-navigation-item {
+  display: inline-block;
+  width: auto;
+  line-height: 65px;
+  border-top: 5px solid rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.vertical-navigation-item {
+  display: block;
+  line-height: 70px;
+  background-color: grey;
+  margin-bottom: 10px;
+  border-radius: 0px 35px 35px 0px;
+}
+
+.horizontal-navigation-item:hover {
+  border-top: 5px solid;
+}
+
+.horizontal-navigation-item:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#accent-nav-bar .navigation-item {
+  color: white;
+}
+
+#no-accent-nav-bar .navigation-item {
+  color: #212121;
+}
+
+@media only screen and (orientation: landscape) {
+  .navigation-bar {
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+  }
+  
+  .horizontal-nav-bar {
+    z-index: 96;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+      top: 0px;
+  }
+  
+  .vertical-nav-bar {
+    z-index: 94;
+    position: fixed;
+      top: 0px;
+      left: 0px;
+    height: 100vh;
+    width: 20vw;
+    padding-top:80px;
+  }
+  
+  #accent-nav-bar {
+    
+  }
+  
+  #no-accent-nav-bar {
+    background-color: white;
+  }
+
+  .nav-bar-left {
+    text-align: left;
+  }
+
+  .nav-bar-right {
+    text-align: right;
+  }
+
+  .nav-bar-center {
+    text-align: center;
+  }
+  
+  #navigation-item-list {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+  }
+  
+  .navigation-item {
+    text-align: center;
+    font-size: 24px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 70px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: color .5s;
+  }
+  
+  .horizontal-navigation-item {
+    display: inline-block;
+    width: auto;
+    line-height: 65px;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    color: white;
+  }
+  
+  .vertical-navigation-item {
+    display: block;
+    line-height: 70px;
+    background-color: grey;
+    margin-bottom: 10px;
+    border-radius: 0px 35px 35px 0px;
+  }
+  
+  .horizontal-navigation-item:hover {
+    border-top: 5px solid;
+  }
+  
+  .horizontal-navigation-item:active {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  #section-1::after {
+    content: "  Home";
+  }
+
+  #section-2::after {
+    content: "  About";
+  }
+
+  #section-3::after {
+    content: "  Blog";
+  }
+
+  #section-4::after {
+    content: "  Gallery";
+  }
+
+  #section-5::after {
+    content: "  Contact";
+  }
+  
+  #accent-nav-bar .navigation-item {
+    color: white;
+  }
+
+  #no-accent-nav-bar .navigation-item {
+    color: #212121;
+  }
+}
+
+/*
+
+@media only screen and (max-width: 500px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+*/

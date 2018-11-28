@@ -1,0 +1,49 @@
+.blog-image {
+    color: white;
+    position: relative;
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-image * {
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-image-quarter {
+    line-height: 25vh;
+}
+
+.blog-image-half {
+    line-height: 50vh;
+}
+
+.blog-image-full {
+    line-height: 100vh;
+}
+
+.blog-content-image {
+    max-width: 80%;
+}
+
+#blog-image-1 {
+    background-image: url("/resources/images/blog/music.jpg");
+}
+
+#blog-image-2 {
+    background-image: url("/resources/images/blog/technology.jpg");
+}
+
+#blog-image-3 {
+    background-image: url("/resources/MooseHound/winter.jpg");
+}
+
+#blog-image-4 {
+    background-image: url("/resources/images/blog/grains.jpg");
+}
+
+#blog-image- {
+    background-image: url("/resources/images/question.jpg");
+}
+
