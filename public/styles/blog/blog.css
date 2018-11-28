@@ -39,6 +39,10 @@
     background-image: url("/resources/MooseHound/winter.jpg");
 }
 
+#blog-image-4 {
+    background-image: url("/resources/images/blog/grains.jpg");
+}
+
 #blog-image- {
     background-image: url("/resources/images/question.jpg");
 }

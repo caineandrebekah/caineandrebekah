@@ -1,0 +1,33 @@
+<section>
+    <div>
+        <form action="loader();">
+            First name:<br>
+            <input type="text" name="firstname" value="">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <button id="wowzers" action="loader();">TEST</button>
+
+        <script>
+            function loader() {
+                $(wowzers).load('https://us-central1-caineandrebekah.cloudfunctions.net/router');
+            }
+        </script>
+    </div>
+    <ul>
+        <li><p>TEST</p></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>

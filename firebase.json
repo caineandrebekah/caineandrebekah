@@ -18,37 +18,36 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ {
+    "redirects": [
+      {
       "source": "/example",
       "destination": "https://example-website.com",
       "type" : 301
-    }, {
-      "source": "/example",
-      "destination": "https://example-website.com",
-      "type" : 301
-    } ],
-    "rewrites": [ {
-      "source": "/about",
-      "destination": "/about/about.html"
-    }, {
-      "source": "/blog",
-      "destination": "/blog/blog.html"
-    }, {
-      "source": "/gallery",
-      "destination": "/gallery/gallery.html"
-    }, {
-      "source": "/contact",
-      "destination": "/contact/contact.html"
-    }, {
-      "source": "/app",
-      "destination": "/app/app.html"
-    }, {
-      "source": "/* //THIS WOULD REDIRECT ALL URLS",
-      "function": "server"
-    }, {
-      "source": "/router",
-      "function": "router"
-    } ]
+      },
+      {
+        "source": "/example",
+        "destination": "https://example-website.com",
+        "type" : 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "responder"
+      },
+      {
+        "source": "/*",
+        "function": "responder"
+      },
+      {
+        "source": "/*/*",
+        "function": "responder"
+      },
+      {
+        "source": "/*/*/*",
+        "function": "responder"
+      }
+    ]
   },
   "storage": {
     "rules": "storage.rules"

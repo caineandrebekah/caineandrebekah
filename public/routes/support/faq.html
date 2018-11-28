@@ -1,0 +1,70 @@
+<nav class="navigation-bar horizontal-nav-bar nav-bar-left" id="app-accent-nav-bar">
+  <ul id="navigation-item-list">
+    <a href="/"><li class="navigation-item horizontal-navigation-item" id="section-1"><span class="navigation-item-text" id="home-text"><i class="fas fa-arrow-left"></i></i></span></li></a>
+  </ul>
+</nav>
+
+<!--Page Content-->
+<section class="section section-full-free section-center" id="faq-canvas">
+  
+<!--Question Lists-->  
+  <div class="faq" id="faq-question">
+    <div class="faq-section nav" id="navigation">
+      <div class="unselectable" id="navigation-drop" onClick="openSection(0);"><h3>TEST</h3></div>
+      <ul id="navigation-list">
+        <li onClick="openSection(1);" class="navigation-button unselectable" id="navigation-button-1">
+          <h3><i class="fas fa-file-invoice"></i> Account and Billing Info</h3>
+        </li>
+        <li onClick="openSection(2);" class="navigation-button unselectable" id="navigation-button-2">
+          <h3><i class="fas fa-chess"></i> Success and Value</h3>
+        </li>
+        <li onClick="openSection(3);" class="navigation-button unselectable" id="navigation-button-3">
+          <h3><i class="fas fa-check-double"></i> How To and Features</h3>
+        </li>
+        <li onClick="openSection(4);" class="navigation-button unselectable" id="navigation-button-4">
+          <h3><i class="fas fa-info-circle"></i> Information and Platform</h3>
+        </li>
+        <li onClick="openSection(5);" class="navigation-button unselectable" id="navigation-button-5">
+          <h3><i class="fas fa-bug"></i> Bugs and Current Issues</h3>
+        </li>
+      </ul>
+    </div>
+    <ul class="faq-list" id="faq-list-1"></ul>
+    <ul class="faq-list" id="faq-list-2"></ul>
+    <ul class="faq-list" id="faq-list-3"></ul>
+    <ul class="faq-list" id="faq-list-4"></ul>
+    <ul class="faq-list" id="faq-list-5"></ul>
+  </div>
+  
+<!--Answer Article-->   
+  <div class="faq" id="faq-answer">
+    <div class="faq-section nav" id="article-nav">
+      <div id="article-list">
+        <span class="icon-pan" id="icon-pan-article-x" title="Close">
+          <svg class="icon" viewBox="-5 -5 35 35" onClick="closeArticle();">
+            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+          </svg>
+        </span>
+        <span id="article-title-container"></span>
+      </div>
+    </div>
+    <div id="article">
+      <div id="article-video-container">
+        <iframe id="article-video" title="Article Video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div id="article-body-container"></div>
+      <div class="article-button unselectable">Call Banyan Support</div>
+    </div>
+  </div>
+
+  <!--Notifications-->   
+  <div id="toast">
+    <div class="icon-pan" id="icon-pan-toast-x" title="Close">
+      <svg class="icon" viewBox="-5 -5 35 35" onClick="closeToast();">
+        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+      </svg>
+    </div>
+  </div>
+
+  <script src="/scripts/faq.js"></script>
+</section>
