@@ -12,9 +12,9 @@ function scrollFunction() {
     }
     if (document.body.contains(navAccent)) {
       navAccent.style.backgroundColor = "white";
-      navAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+      navAccent.classList.add("box-shadow-heavy");
     } else if (document.body.contains(navNoAccent)) {
-      navNoAccent.style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+      navNoAccent.classList.add("box-shadow-heavy");
     }
     for (var i = 0; i < navItem.length; i++) {
       navItem[i].style.color = "#212121";
@@ -25,12 +25,12 @@ function scrollFunction() {
     }
     if (document.body.contains(navAccent)) {
       navAccent.style.backgroundColor = "";
-      navAccent.style.boxShadow = "";
+      navAccent.classList.remove("box-shadow-heavy");
       for (var i = 0; i < navItem.length; i++) {
         navItem[i].style.color = "white";
       }
     } else if (document.body.contains(navNoAccent)) {
-      navNoAccent.style.boxShadow = "";
+      navNoAccent.classList.remove("box-shadow-heavy");
     }
   }
 }

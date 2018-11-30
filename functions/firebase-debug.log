@@ -1,0 +1,35 @@
+[debug] [2018-11-30T02:47:58.778Z] ----------------------------------------------------------------------
+[debug] [2018-11-30T02:47:58.779Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-11-30T02:47:58.780Z] CLI Version:   6.1.1
+[debug] [2018-11-30T02:47:58.780Z] Platform:      win32
+[debug] [2018-11-30T02:47:58.780Z] Node Version:  v8.12.0
+[debug] [2018-11-30T02:47:58.780Z] Time:          Thu Nov 29 2018 19:47:58 GMT-0700 (Mountain Standard Time)
+[debug] [2018-11-30T02:47:58.780Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-30T02:47:58.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-30T02:47:58.790Z] > authorizing via signed-in user
+[debug] [2018-11-30T02:47:58.790Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2018-11-30T02:47:58.792Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2018-11-30T02:47:59.076Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-30T02:47:59.077Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah  
+ 
+[debug] [2018-11-30T02:47:59.303Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Users\caine\Desktop\caineandrebekah'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-11-30T02:47:59.864Z] Fetching environment
+[debug] [2018-11-30T02:47:59.866Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501:getServerAppConfig  
+ 
+[debug] [2018-11-30T02:47:59.867Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-30T02:48:00.053Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-30T02:48:00.053Z] Starting @google-cloud/functions-emulator
+[debug] [2018-11-30T02:48:00.123Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-11-30T02:48:01.576Z] Parsing function triggers
+[info] [hosting] Rewriting / to local function responder
+[info] +  functions: responder: http://localhost:5001/caineandrebekah/us-central1/responder
+[info] [hosting] Rewriting / to local function responder

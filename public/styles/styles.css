@@ -1,0 +1,41 @@
+.box-shadow-light {
+
+}
+
+.box-shadow-light:hover {
+
+}
+
+.box-shadow-medium {
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+}
+
+.box-shadow-medium:hover {
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+}
+
+.box-shadow-heavy {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.box-shadow-heavy:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*
+
+-webkit-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+
+Original Shadow from dot
+
+*/

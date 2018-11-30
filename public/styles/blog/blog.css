@@ -1,4 +1,4 @@
-.blog-image {
+.accent-image {
     color: white;
     position: relative;
     user-select: none;
@@ -6,44 +6,47 @@
     padding: 0px;
 }
 
-.blog-image * {
+.accent-image * {
     padding: 0px;
     margin: 0px;
 }
 
-.blog-image-quarter {
+.accent-image-quarter {
     line-height: 25vh;
 }
 
-.blog-image-half {
+.accent-image-half {
     line-height: 50vh;
 }
 
-.blog-image-full {
+.accent-image-full {
     line-height: 100vh;
 }
 
-.blog-content-image {
+.accent-content-image {
     max-width: 80%;
 }
 
-#blog-image-1 {
-    background-image: url("/resources/images/blog/music.jpg");
-}
-
-#blog-image-2 {
-    background-image: url("/resources/images/blog/technology.jpg");
-}
-
-#blog-image-3 {
-    background-image: url("/resources/MooseHound/winter.jpg");
-}
-
-#blog-image-4 {
-    background-image: url("/resources/images/blog/grains.jpg");
-}
-
-#blog-image- {
+#accent-image- {
     background-image: url("/resources/images/question.jpg");
 }
 
+#accent-image-1 {
+    background-image: url("/resources/images/blog/music.jpg");
+}
+
+#accent-image-2 {
+    background-image: url("/resources/images/blog/technology.jpg");
+}
+
+#accent-image-3 {
+    background-image: url("/resources/MooseHound/winter.jpg");
+}
+
+#accent-image-4 {
+    background-image: url("/resources/images/blog/grains.jpg");
+}
+
+#accent-image-5 {
+    background-image: url("/resources/images/tools.jpg");
+}

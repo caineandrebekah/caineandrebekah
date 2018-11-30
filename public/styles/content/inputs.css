@@ -5,7 +5,7 @@ input {
     margin: 20px;
     padding: 5px;
     box-sizing: border-box;
-    
+    background-color: lightgrey;
 }
 
 .input-red {
@@ -20,9 +20,4 @@ input {
 
 .input-blue {
     background-color: blue;
-}
-
-
-.input-default {
-    background-color: lightgrey;
 }
