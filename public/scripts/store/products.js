@@ -1,5 +1,4 @@
-console.log("File Loaded");
-$( ".product-selector" ).click(function() {
+$(".product-selector").click(function() {
     var mode = $( this ).css("border-color");
     console.log(mode);
     if (mode == "rgb(128, 128, 128)") {

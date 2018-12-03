@@ -1,3 +1,4 @@
+<div id="canvas-inner">
 <nav class="navigation-bar horizontal-nav-bar nav-bar-center" id="accent-nav-bar">
     <ul id="navigation-item-list">
         <a href="#home"><li class="navigation-item horizontal-navigation-item" id="section-1"    onmouseover="hoverTrigger(home);">   <span class="navigation-item-text" id="home-text"><i class="fas fa-home"></i></span>        </li></a><!--
@@ -22,7 +23,7 @@
     </div>
 </section>
 
-<section class="section section-full-free section-center">
+<section class="section section-full-free section-center" id="about" onmouseover="hoverTrigger(about);">
 <div class="section-content-container">
 
 
@@ -91,8 +92,9 @@
     </div>
 </section>
 
-<div title="Menu" class="dot dot-large box-shadow-heavy" id="dot-nav"><i class="fas fa-align-right"></i></div>
+<div title="Menu" class="dot dot-large box-shadow-heavy" id="dot-nav" onClick="openDot();"><i class="fas fa-align-right"></i></div>
 <a href="/account/sign-up"><div title="Account" class="dot dot-medium box-shadow-heavy" id="dot-help"><i class="far fa-user-circle"></i></div></a>
 <div onClick="promptMaintenance();" title="Notice" class="dot dot-medium box-shadow-heavy" id="dot-alert"><i class="fas fa-exclamation"></i></i></div>
 <a href="/support/support-portal"><div title="Help" class="dot dot-medium box-shadow-heavy" id="dot-account"><i class="far fa-question-circle"></i></div></a>
 <a href="#home"><div title="To the top" class="dot dot-small" id="dot-pagetop box-shadow-heavy"><i class="fas fa-arrow-up"></i></i></div></a>
+</div>

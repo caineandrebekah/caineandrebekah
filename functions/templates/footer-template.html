@@ -90,7 +90,7 @@
         <!--Only run Javascript once the page has fully finished loading.-->
         <script type="text/javascript">
             function autorun() {
-                //Place scripts to be run here.
+                loadContent();
             }
             if (window.addEventListener) window.addEventListener("load", autorun, false);
             else if (window.attachEvent) window.attachEvent("onload", autorun);

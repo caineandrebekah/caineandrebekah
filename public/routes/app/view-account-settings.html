@@ -1,0 +1,114 @@
+<div id="app-canvas-inner">
+    <section class="section section-app section-full-free section-center">
+        <h1>Account Settings</h1>
+        <div class="itemlist">
+            <div class="item item-setting box-shadow-medium">
+                <div class="item-header">
+                        <h2>Contact Details:</h2>
+                </div>
+                <div class=" item-body item-body-setting">
+                    <form action="/scripts/node/accountsettings.js" method="get">
+                        Profile Photo: <input type="file" name="myFile">
+                        <br><br>
+                        First name: <input type="text" name="firstname" value="">
+                        <br><br>
+                        Last name: <input type="text" name="lastname" value="">
+                        <br><br>
+                        Username: <input type="email" name="username" value="">
+                        <br><br>
+                        Account Email: <input type="email" name="email" value="">
+                        <br><br>
+                        Verifiication Phone: <input type="tel" name="phone" value="">
+                        <br><br>
+                        Birthday: <input type="date" name="birthday">
+                        <br><br>
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+            <div class="item item-setting box-shadow-medium">
+                <div class="item-header">
+                        <h2>Options:</h2>
+                </div>
+                <div class=" item-body item-body-setting">
+                    <form action="/scripts/node/accountsettings.js" method="get">
+                        Moto: <textarea name="moto" rows="3" cols="30">Tell me about yourself...</textarea>
+                        <br><br>
+                        Language: <select name="language">
+                                <option value="english" selected>English</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="french">French</option>
+                                <option value="german">German</option>
+                            </select>
+                        <br><br>
+                        Theme: <select name="theme">
+                                <option value="default" selected>Default</option>
+                                <option value="night">Night</option>
+                                <option value="highcontrast">High Contrast</option>
+                                <option value="festive">Festive</option>
+                            </select>
+                        <br><br>
+                        Theme Color: <input type="color" name="themecolor">
+                        <h3>Features</h3>
+                        Dev: <input type="radio" name="betafeatures" value="dev">
+                        <br>
+                        QA: <input type="radio" name="betafeatures" value="qa">
+                        <br>
+                        Alpha: <input type="radio" name="betafeatures" value="alpha">
+                        <br>
+                        Beta: <input type="radio" name="betafeatures" value="beta">
+                        <br>
+                        Production: <input type="radio" name="betafeatures" value="production" checked>
+                        <br>
+                        <br><br>
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+            <div class="item item-setting box-shadow-medium">
+                <div class="item-header">
+                        <h2>Notifications:</h2>
+                </div>
+                <div class=" item-body item-body-setting">
+                    <form action="/scripts/node/accountsettings.js" method="get">
+                        Subscribe to Newsletter: <input type="checkbox" name="newsletter" value="">
+                        <br><br>
+                        Receive Account Emails: <input type="checkbox" name="accountemails" value="">
+                        <br><br>
+                        Subscribe to Product Updates: <input type="checkbox" name="productupdates" value="">
+                        <br><br>
+                        Mobile Notifications: <input type="checkbox" name="mobilenotifications" value="">
+                        <br><br>
+                        <input type="submit" value="Save">
+                    </form>
+                    </div>
+                </div>
+                <div class="item item-setting box-shadow-medium">
+                    <div class="item-header">
+                            <h2>Security:</h2>
+                    </div>
+                    <div class=" item-body item-body-setting">
+                    <form action="/scripts/node/accountsettings.js" method="post">
+                        Current Password: <input type="password" name="currentpassword" value="">
+                        <br><br>
+                        New Password: <input type="password" name="newpassword" value="">
+                        <br><br>
+                        Confirm Password: <input type="password" name="confirmpassword" value="">
+                        <br><br>
+                        Two Factor Authentication: <input type="checkbox" name="twofactorauth" value="">
+                        <br><br>
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+            <div class="item box-shadow-medium">
+                    <div class="item-body item-body-setting">
+                    <button type="button" onclick="loadRoute()">Router</button>
+                    <div id="demoRoute">Waiting...</div>
+                    <button type="button" onclick="loadDoc()">Doc</button>
+                    <div id="demoDoc">Waiting...</div>
+                </div>
+            </div>  
+        </div>
+    </section>
+</div>

@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  var navItem = document.getElementsByClassName("navigation-item");
+  var navItem = document.getElementsByClassName("horizontal-navigation-item");
   var navItemText = document.getElementsByClassName("navigation-item-text");
   var navNoAccent = document.getElementById("no-accent-nav-bar");
   var navAccent = document.getElementById("accent-nav-bar");
@@ -81,6 +81,3 @@ function hoverTrigger(section) {
       break;
   }
 }
-
-
-      

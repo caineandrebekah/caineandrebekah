@@ -38,11 +38,9 @@
 }
 
 .item-body {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
 
 }
-
 
 .item-blog-post {
     color: white;
@@ -50,9 +48,8 @@
     line-height: 70px;
 }
 
-.item-setting {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.item-body-setting {
+    text-align: right;
 }
 
 .item-blog-post:hover {

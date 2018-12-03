@@ -1,0 +1,181 @@
+[debug] [2018-12-02T19:46:38.431Z] ----------------------------------------------------------------------
+[debug] [2018-12-02T19:46:38.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-02T19:46:38.433Z] CLI Version:   6.1.1
+[debug] [2018-12-02T19:46:38.433Z] Platform:      win32
+[debug] [2018-12-02T19:46:38.433Z] Node Version:  v8.12.0
+[debug] [2018-12-02T19:46:38.434Z] Time:          Sun Dec 02 2018 12:46:38 GMT-0700 (Mountain Standard Time)
+[debug] [2018-12-02T19:46:38.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-02T19:46:38.446Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-02T19:46:38.446Z] > authorizing via signed-in user
+[debug] [2018-12-02T19:46:38.446Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2018-12-02T19:46:38.447Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-02T19:46:38.448Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-02T19:46:38.646Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-02T19:46:38.651Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2018-12-02T19:46:38.931Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-02T19:46:38.932Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah  
+ 
+[debug] [2018-12-02T19:46:39.145Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'd:\Users\caine\Desktop\caineandrebekah'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-12-02T19:46:39.696Z] Fetching environment
+[debug] [2018-12-02T19:46:39.698Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501:getServerAppConfig  
+ 
+[debug] [2018-12-02T19:46:39.698Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-02T19:46:42.260Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-02T19:46:42.261Z] Starting @google-cloud/functions-emulator
+[debug] [2018-12-02T19:46:42.321Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-02T19:46:43.786Z] Parsing function triggers
+[info] +  functions: responder: http://localhost:5001/caineandrebekah/us-central1/responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[debug] [2018-12-03T01:13:51.308Z] ----------------------------------------------------------------------
+[debug] [2018-12-03T01:13:51.308Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-03T01:13:51.308Z] CLI Version:   6.1.1
+[debug] [2018-12-03T01:13:51.308Z] Platform:      win32
+[debug] [2018-12-03T01:13:51.308Z] Node Version:  v8.12.0
+[debug] [2018-12-03T01:13:51.308Z] Time:          Sun Dec 02 2018 18:13:51 GMT-0700 (Mountain Standard Time)
+[debug] [2018-12-03T01:13:51.308Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-03T01:13:51.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-03T01:13:51.318Z] > authorizing via signed-in user
+[debug] [2018-12-03T01:13:51.318Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2018-12-03T01:13:51.318Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-03T01:13:51.318Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-03T01:13:51.539Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:13:51.546Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2018-12-03T01:13:51.868Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:13:51.869Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah  
+ 
+[debug] [2018-12-03T01:13:52.075Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'd:\Users\caine\Desktop\caineandrebekah'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-12-03T01:13:52.588Z] Fetching environment
+[debug] [2018-12-03T01:13:52.588Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501:getServerAppConfig  
+ 
+[debug] [2018-12-03T01:13:52.588Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-03T01:13:52.838Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:13:52.838Z] Starting @google-cloud/functions-emulator
+[debug] [2018-12-03T01:13:53.040Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-03T01:13:54.398Z] Parsing function triggers
+[info] +  functions: responder: http://localhost:5001/caineandrebekah/us-central1/responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /support/support-portal to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /account/sign-up to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /support/support-portal to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /blog/dev-resources to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /scripts/node/accountsettings.js?myFile=&firstname=&lastname=&username=&email=&phone=&birthday= to local function responder
+[info] [hosting] Rewriting /routes/scripts/node/accountsettings.js.html to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /account/sign-up to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /account/sign-up to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /support/support-portal to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /account/sign-up to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting /app to local function responder
+[info] [hosting] Rewriting / to local function responder
