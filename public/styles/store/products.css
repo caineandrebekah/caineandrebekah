@@ -88,10 +88,6 @@ border-bottom: 5px solid;
 text-align: center;
 }
 
-i {
-transition: all .15s ease-in-out;
-}
-
 .product:hover i {
 transform: scale(1.05);
 }
@@ -149,13 +145,6 @@ border-bottom-color: #FF6F00;
 background-color: #3949AB;
 border-bottom-color: #311B92;
 }
-
-
-
-
-
-
-
 
 #product-detail-1 {
 

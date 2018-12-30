@@ -1,0 +1,359 @@
+.card {
+  height: 280px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding: 25px;
+  z-index: 40;
+  box-sizing: border-box;
+}
+
+.card-free {
+  min-height: 280px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 40;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+}
+
+
+.card-member {
+  margin-left: 60px;
+  padding-left: 160px;
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+  margin-top: 60px;
+}
+
+.card-blog-post {
+
+}
+
+.card-album {
+  padding-bottom: 100%;
+  padding-top: 0px;
+}
+
+.card-setting {
+  
+}
+
+.card-video {
+  height: 280px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 40;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-plain-text {
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 40;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/*Default Card*/
+
+#card- {
+  background-image: url("/resources/images/question.jpg");
+}
+
+/*Home Page Items*/
+
+#card-intro {
+  background-image: url("/resources/images/park-bridge.jpg");
+}
+
+#card-members {
+  background-image: url("/resources/images/crowd.jpg");
+}
+
+#card-projects {
+  background-image: url("/resources/images/backpacks.jpg");
+}
+
+#card-products {
+  background-image: url("/resources/images/papers.jpg");
+}
+
+#card-more {
+  background-image: url("/resources/images/speedy.png");
+}
+
+#card-support {
+  background-image: url("/resources/images/support.jpg");
+}
+
+#card-contact {
+  background-image: url("/resources/images/contact.jpg");
+}
+
+/*Blog Posts*/
+
+#card-trailblazin {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/38152d754a2258869cf0f7d78b94dc6f/5C6B73CD/t51.2885-15/sh0.08/e35/s640x640/21910967_1910168205969244_7285284915166314496_n.jpg");
+}
+
+#card-family-man {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/f48863db2ff0d7a3fd3a5ed7eefbffd5/5C6B5CF3/t51.2885-15/sh0.08/e35/s640x640/38097497_875660602622748_7292451514776289280_n.jpg");
+}
+
+#card-dev-resources {
+  background-image: url("/resources/images/blog/technology.jpg");
+}
+
+#card-cold-one {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/5a53a106cc65f96a16764af1d5624398/5C732F9E/t51.2885-15/sh0.08/e35/s640x640/32738100_368736080200095_4673005653059436544_n.jpg");
+}
+
+#card-favorite-music {
+  background-image: url("/resources/images/blog/music.jpg");
+}
+
+#card-moosehound {
+  background-image: url("/resources/MooseHound/winter.jpg");
+}
+
+/*Projects*/
+
+#card-caine-and-rebekah-home {
+  background-image: url("/resources/images/caine-and-rebekah-home.png");
+}
+
+/*Development Utilities*/
+
+#card-create-custom-html {
+  background-image: url("/resources/images/dev-board/create-custom-html.png");
+}
+
+#card-edit-photos-easily {
+  background-image: url("/resources/images/dev-board/edit-photos-easily.png");
+}
+
+#card-ensure-your-styling {
+  background-image: url("/resources/images/dev-board/ensure-your-styling.svg");
+}
+
+#card-find-cool-tools {
+  background-image: url("/resources/images/dev-board/find-cool-tools.png");
+}
+
+#card-make-code-easier {
+  background-image: url("/resources/images/dev-board/make-code-easier.png");
+}
+
+#card-see-free-open {
+  background-image: url("/resources/images/dev-board/see-free-open.png");
+}
+
+#card-get-randomly-generated {
+  background-image: url("/resources/images/dev-board/get-randomly-generated.png");
+}
+
+#card-reliable-font-references {
+  background-image: url("/resources/images/dev-board/reliable-font-references.png");
+}
+
+#card-hosted-images-gifs {
+  background-image: url("/resources/images/dev-board/hosted-images-gifs.png");
+}
+
+#card-googles-hosted-libraries {
+  background-image: url("/resources/images/dev-board/googles-hosted-libraries.png");
+}
+
+#card-ask-questions {
+  background-image: url("/resources/images/dev-board/ask-questions.png");
+}
+
+#card-integrate-with {
+  background-image: url("/resources/images/dev-board/integrate-with.png");
+}
+
+#card-learn-about-technologies {
+  background-image: url("/resources/images/dev-board/learn-about-technologies.png");
+}
+
+#card-generate-a-free {
+  background-image: url("/resources/images/dev-board/generate-a-free.png");
+}
+
+#card-purchase-manage {
+  background-image: url("/resources/images/dev-board/purchase-manage.png");
+}
+
+#card-free-ssl {
+  background-image: url("/resources/images/dev-board/free-ssl.png");
+}
+
+#card-scan-organizations {
+  background-image: url("/resources/images/dev-board/scan-organizations.png");
+}
+
+#card-test-your-site {
+  background-image: url("/resources/images/dev-board/test-your-site.png");
+}
+
+#card-track-load-speeds {
+  background-image: url("/resources/images/dev-board/track-load-speeds.png");
+}
+
+#card-detect-broken-links {
+  background-image: url("/resources/images/dev-board/detect-broken-links.png");
+}
+
+#card-validate-your-html {
+  background-image: url("/resources/images/dev-board/validate-your-html.png");
+}
+
+#card-test-for-responsive {
+  background-image: url("/resources/images/dev-board/test-for-responsive.png");
+}
+
+#card-get-a-list {
+  background-image: url("/resources/images/dev-board/get-a-list.png");
+}
+
+#card-test-syntax {
+  background-image: url("/resources/images/dev-board/test-syntax.png");
+}
+
+#card-get-your-page {
+  background-image: url("/resources/images/dev-board/get-your-page.png");
+}
+
+#card-learn-development-practices {
+  background-image: url("/resources/images/dev-board/learn-development-practices.png");
+}
+
+#card-the-first-stop {
+  background-image: url("/resources/images/dev-board/the-first-stop.png");
+}
+
+#card-course-after-course {
+  background-image: url("/resources/images/dev-board/course-after-course.png");
+}
+
+#card-improve-your-ratings {
+  background-image: url("/resources/images/dev-board/improve-your-ratings.png");
+}
+
+#card-create-a-business {
+  background-image: url("/resources/images/dev-board/create-a-business.png");
+}
+
+#card-create-a-facebook {
+  background-image: url("/resources/images/dev-board/create-a-facebook.png");
+}
+
+#card-find-google-search {
+  background-image: url("/resources/images/dev-board/find-google-search.png");
+}
+
+#card-find-yourself {
+  background-image: url("/resources/images/dev-board/find-yourself.png");
+}
+
+#card-create-services-faster {
+  background-image: url("/resources/images/dev-board/create-services-faster.png");
+}
+
+#card-save-your-code {
+  background-image: url("/resources/images/dev-board/save-your-code.png");
+}
+
+#card-version-control {
+  background-image: url("/resources/images/dev-board/version-control.png");
+}
+
+#card-spin-up-cloud {
+  background-image: url("/resources/images/dev-board/spin-up-cloud.png");
+}
+
+#card-host-your-application {
+  background-image: url("/resources/images/dev-board/host-your-application.png");
+}
+
+#card-an-endless-resource {
+  background-image: url("/resources/images/dev-board/an-endless-resource.png");
+}
+
+#card-tons-of-free-icons {
+  background-image: url("/resources/images/dev-board/tons-of-free-icons.png");
+}
+
+#card-reliable-icons {
+  background-image: url("/resources/images/dev-board/reliable-icons.png");
+}
+
+/*Favorite Music*/
+
+#card-artist-ajr {
+  background-image: url("/resources/images/favorite-music/ajr.jpg");
+}
+
+#card-artist-childish-gambino {
+  background-image: url("/resources/images/favorite-music/childish-gambino.jpg");
+}
+
+
+#card-artist-jon-bellion {
+  background-image: url("/resources/images/favorite-music/jon-bellion.jpg");
+}
+
+
+#card-artist-kyle {
+  background-image: url("/resources/images/favorite-music/kyle.jpg");
+}
+
+
+#card-artist-owl-city {
+  background-image: url("/resources/images/favorite-music/owl-city.jpg");
+}
+
+
+#card-artist-frank-ocean {
+  background-image: url("/resources/images/favorite-music/frank-ocean.jpg");
+}
+
+/*Gallery Intro Blocks*/
+
+#card-dragon {
+  background-image: url("/resources/images/gallery/dragon.jpg");
+}
+
+#card-christian-drinking-art {
+  background-image: url("/resources/images/gallery/christian-drinking-art.jpg");
+}
+
+#card-flowers {
+  background-image: url("/resources/images/gallery/flowers.jpg");
+}
+
+
+
+
+
+

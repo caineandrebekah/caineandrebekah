@@ -1,146 +1,68 @@
-.block-holder {
-    margin: 25px;
-  }
-  
-  .block {
-    user-select: none;
-    display: inline-block;
-    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
-    margin: 10px;
-    transition: all 1s;
-    position: relative;
-    box-sizing: border-box;
-    }
-  
-  .block-s {
-    border-radius: 0%;
-    width: 200px;
-    height: 200px;
-  }
-  
-  .block-r {
-    border-radius: 5%;
-    width: 200px;
-    height: 300px;
-  }
-  
-  .block-c {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .block:hover {
-    transform: translate(0px,-20px);
-    -ms-transform: translate(0px,-20px); /* IE 9 */
-    -webkit-transform: translate(0px,-20px); /* Safari 3-8 */
-    -webkit-box-shadow: 10px 10px 40px -5px rgba(0,0,0,.3);
-    -moz-box-shadow: 10px 10px 40px -5px rgba(0,0,0,.3);
-    box-shadow: 10px 10px 40px -5px rgba(0,0,0,.3);
-  }
-  
-  .block-image {
-    display: block;
-    border-radius: 5% 5% 0% 0%;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    position: absolute;
-      top: 0px;
-      left: 0px;
-  }
-  
-  .block-overlay {
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
-    line-height: 200px;
-    color: white;
-    width: 200px;
-    height: 200px;
-    z-index: 50;
-    position: absolute;
-      top: 0px;
-      left: 0px;
-  }
-  
-  .block:hover .block-overlay {
-    display: block;
-  }
-  
-  .block-c:hover .block-overlay {
-    display: block;
-  }
-  
-  .block-text {
-    display: block;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    position: absolute;
-      bottom: 0px;
-      left: 0px;
-  }
-  
-  .block-more {
-    transition: all 0.5s;
-    display: none;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    text-align: right;
-    position: absolute;
-      bottom: -30px;
-      left: 0px;
-  }
-  
-  .block-more::before {
-    content: "learn More...";
-  }
-  
-  .block:hover .block-more {
-    display: block;
-  }
-  
-  #block-trailblazin {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/38152d754a2258869cf0f7d78b94dc6f/5C6B73CD/t51.2885-15/sh0.08/e35/s640x640/21910967_1910168205969244_7285284915166314496_n.jpg");
-  }
-  
-  #block-family-man {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/f48863db2ff0d7a3fd3a5ed7eefbffd5/5C6B5CF3/t51.2885-15/sh0.08/e35/s640x640/38097497_875660602622748_7292451514776289280_n.jpg");
-  }
-  
-  #block-dev-resources {
-    background-image: url("/resources/images/blog/technology.jpg");
-  }
-  
-  #block-cold-one {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/5a53a106cc65f96a16764af1d5624398/5C732F9E/t51.2885-15/sh0.08/e35/s640x640/32738100_368736080200095_4673005653059436544_n.jpg");
-  }
-  
-  #block-music {
-    background-image: url("/resources/images/blog/music.jpg");
-  }
-  
-  #block-caine {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/c4649af49ec42b0a4ddeb06c90df8bd6/5C50E30F/t51.2885-15/sh0.08/e35/s640x640/37667621_223035328547980_365535896239341568_n.jpg");
-  }
-  
-  #block-rebekah {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/91f599b2ba2c5430aac8d2da72b5ade1/5C4E2C9C/t51.2885-15/sh0.08/e35/s640x640/31038119_167538413932626_2489941838849376256_n.jpg");
-  }
-  
-  #block-tyson {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/d4ec2131482974a1b553e5c1428f0196/5C7B3A4D/t51.2885-15/sh0.08/e35/s640x640/41281261_1824253147656316_5038571294098528147_n.jpg");
-  }
-  
-  #block-christian {
-    background-image: url("/resources/images/christian-pose.jpg");
-  }
-  
-  #block-auryn {
-    background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/48476b8b7d49aaf271182762075fcbd1/5C7A89E5/t51.2885-15/sh0.08/e35/p640x640/31310652_225915521507159_7305177060492705792_n.jpg");
-  }
+.block {
+  user-select: none;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+    left: -50px;
+    top: -50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.block:hover {
+  -webkit-box-shadow: 10px 10px 40px -5px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 10px 10px 40px -5px rgba(0, 0, 0, .3);
+  box-shadow: 10px 10px 40px -5px rgba(0, 0, 0, .3);
+}
+
+.block:hover .block-overlay {
+  display: block;
+}
+
+.block-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.block-overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 200px;
+  color: white;
+  width: 200px;
+  height: 200px;
+  z-index: 50;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#block-caine {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/c4649af49ec42b0a4ddeb06c90df8bd6/5C50E30F/t51.2885-15/sh0.08/e35/s640x640/37667621_223035328547980_365535896239341568_n.jpg");
+}
+
+#block-rebekah {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/91f599b2ba2c5430aac8d2da72b5ade1/5C4E2C9C/t51.2885-15/sh0.08/e35/s640x640/31038119_167538413932626_2489941838849376256_n.jpg");
+}
+
+#block-tyson {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/d4ec2131482974a1b553e5c1428f0196/5C7B3A4D/t51.2885-15/sh0.08/e35/s640x640/41281261_1824253147656316_5038571294098528147_n.jpg");
+}
+
+#block-christian {
+  background-image: url("/resources/images/christian-pose.jpg");
+}
+
+#block-auryn {
+  background-image: url("https://instagram.fslc1-1.fna.fbcdn.net/vp/48476b8b7d49aaf271182762075fcbd1/5C7A89E5/t51.2885-15/sh0.08/e35/p640x640/31310652_225915521507159_7305177060492705792_n.jpg");
+}
