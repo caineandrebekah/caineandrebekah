@@ -1,6 +1,5 @@
 .section {
     width: 100vw;
-    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,6 +7,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 10px;
+    position: relative;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -49,11 +49,6 @@
     text-align: right;
 }
 
-.section-content-container {
-    height: 100%;
-    overflow: hidden;
-}
-
 .artist-title {
     color: black;
 }
@@ -61,7 +56,7 @@
 @media only screen and (orientation: landscape) {
     .section {
         width: 100vw;
-        overflow: hidden;
+        /* overflow: hidden; */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -108,12 +103,104 @@
         text-align: right;
     }
     
-    .section-content-container {
-        height: 100%;
-        overflow: hidden;
-    }
-    
     .artist-title {
         color: black;
     }
+}
+
+/*Accent Images*/
+
+.accent-image {
+    color: white;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.accent-image * {
+    padding: 0px;
+    margin: 0px;
+}
+
+.accent-image-quarter {
+    line-height: 25vh;
+}
+
+.accent-image-half {
+    line-height: 50vh;
+}
+
+.accent-image-full {
+    line-height: 100vh;
+}
+
+.accent-content-image {
+    max-width: 80%;
+}
+
+.section-flare {
+    width: 200vw;
+    height: 55%;
+    z-index: 20;
+    position: absolute;
+    top: 40%;
+    left: -50%;
+}
+  
+.section-flare-wood-left {
+    background-image: url("/resources/images/materials/planks.jpg");
+    transform: rotate(20deg);
+}
+
+.section-flare-wood-right {
+    background-image: url("/resources/images/materials/planks.jpg");
+    transform: rotate(-20deg);
+}
+
+.section-flare-transition-left {
+    background: #00BCD4;
+    background: -moz-linear-gradient(left, #2196F3 0%, #4CAF50 100%);
+    background: -webkit-linear-gradient(left, #2196F3 0%, #4CAF50 100%);
+    background: linear-gradient(to right, #2196F3 0%, #4CAF50 100%);
+    transform: rotate(20deg);
+}
+
+.section-flare-transition-right {
+    background: #00BCD4;
+    background: -moz-linear-gradient(left, #2196F3 0%, #4CAF50 100%);
+    background: -webkit-linear-gradient(left, #2196F3 0%, #4CAF50 100%);
+    background: linear-gradient(to right, #2196F3 0%, #4CAF50 100%);
+    transform: rotate(-20deg);
+}
+
+#accent-image- {
+    background-image: url("/resources/images/question.jpg");
+}
+
+#accent-image-1 {
+    background-image: url("/resources/images/blog/music.jpg");
+}
+
+#accent-image-2 {
+    background-image: url("/resources/images/blog/technology.jpg");
+}
+
+#accent-image-3 {
+    background-image: url("/resources/MooseHound/winter.jpg");
+}
+
+#accent-image-4 {
+    background-image: url("/resources/images/blog/grains.jpg");
+}
+
+#accent-image-5 {
+    background-image: url("/resources/images/tools.jpg");
+}
+
+#accent-image-6 {
+    background-image: url("/resources/images/crowd.jpg");
+}
+
+#accent-image-7 {
+    background-image: url("/resources/images/projects.jpg");
 }

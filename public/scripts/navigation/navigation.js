@@ -33,7 +33,7 @@ function scrollFunction() {
       navNoAccent.classList.remove("box-shadow-heavy");
     }
   }
-}
+};
 
 function hoverTrigger(section) {
   switch (section) {

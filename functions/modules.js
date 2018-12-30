@@ -1,4 +1,3 @@
 module.exports = {
-    beginResponse: require('./response.js')
-    /* Add modules here */
+    beginResponse: require('./response.js'),
  }

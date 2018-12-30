@@ -5,3 +5,11 @@ padding-left: 25vw;
 .crownAdmin {
     color: orange;
 }
+
+#route-menu-1-b, #route-menu-1-c, #route-menu-1-d, #route-menu-2-b, #route-menu-2-c, #route-menu-2-d, #route-menu-3-b, #route-menu-3-c, #route-menu-3-d, #route-menu-4 {
+    display: none;
+}
+
+#route-builder-2, #route-builder-3 {
+    display: none;
+}

@@ -28,21 +28,25 @@ p {
 
 a:link {
   text-decoration: none;
-  color: green;
+  color: black; 
 }
 
 a:visited {
   text-decoration: none;
-  color: green;
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
-  color: green;
+  color: black;
 }
 
 a:active {
   text-decoration: none;
+  color: black;
+}
+
+p a:link {
   color: green;
 }
 
@@ -75,13 +79,35 @@ i:hover {
   transform: scale(1.2);
 }
 
-.unselect {
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-}
-
 #canvas {
   width: 100vw;
   overflow: hidden;
 }
+
+/*
+
+input {
+  border: 0px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: lightgrey;
+}
+
+.input-red {
+  background-color: red;
+}
+
+
+.input-green {
+  background-color: green;
+}
+
+
+.input-blue {
+  background-color: blue;
+}
+
+*/

@@ -1,0 +1,135 @@
+#home {
+  background-position: bottom;
+  background-attachment: fixed;
+  background-image: url("/resources/images/rebekah-outdoors.jpg");
+  padding: 0px;
+  z-index: 50;
+}
+
+#title {
+  transition: transform 0.5s 0.5s;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50vh;
+    width: 60vw;
+    margin: -25vh 0 0 -30%;
+}
+
+#title:hover {
+  transform: scale(1.1);
+}
+
+#title:hover .mirror {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#title:hover #title-mirror-center {
+  color: #212121;
+  border: 5px solid rgba(255, 255, 255, 1);
+}
+
+#title:hover #title-mirror-left {
+  top: 0px;
+  left: 0px;
+}
+
+#title:hover #title-mirror-right {
+  bottom: 0px;
+  right: 0px;
+}
+
+.mirror {
+  background: rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  line-height: 50vh;
+  width: 60vw;
+  height: 50vh;
+}
+
+#title-mirror-center {
+  transition: border 0.5s 0.5s, color 0.5s 0.5s, transform 0.5s 0.5s, background 0.5s 0.5s;
+  font-size: 5vw;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+}
+
+#title-mirror-left {
+  transition: top 0.5s 0.5s, left 0.5s 0.5s, transform 0.5s 0.5s, background 0.5s 0.5s;
+  color: #212121;
+  position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 10;
+}
+
+#title-mirror-right {
+  transition: bottom 0.5s 0.5s, right 0.5s 0.5s, transform 0.5s 0.5s, background 0.5s 0.5s;
+  color: #212121;
+  position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: 10;
+}
+
+#dove {
+  transition: transform 1s;
+  font-size: 1.5vw;
+  position: relative;
+    bottom: 4vw;
+    left: 1vw;
+}
+
+#arrow-container {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+    bottom: 2vh;
+}
+
+#arrow {
+  color: white;
+  font-size: 6vh;
+  position: relative;
+  -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s infinite;
+}
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0% {top: 0px;}
+  50% {top: -10px;}
+  100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {top: 0px;}
+  50% {top: -10px;}
+  100% {top: 0px;}
+}
+
+.tag {
+  display: inline;
+  border: 1px solid;
+  border-radius: 1em;
+  white-space: nowrap;
+  padding: 1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  line-height: 2em;
+}
+
+.tag:hover {
+  background-color: lightgreen;
+}
+
+.music-youtube {
+  color: red;
+}

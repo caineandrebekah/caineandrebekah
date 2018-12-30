@@ -14,7 +14,7 @@ function writeUserData(userId, firstName, lastName, emailAddress, phoneNumber) {
     
 
 
-    console.log("Info: " + firstName + " " + lastName + " " + emailAddress + " " + phoneNumber);
+    console.log("Info: " + firstName + ", " + lastName + ", " + emailAddress + ", " + phoneNumber);
 
     firebase.database().ref('Users').push({
         firstName: firstName,
