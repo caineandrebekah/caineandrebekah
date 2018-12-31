@@ -1,14 +1,6 @@
 /////////////// Initial Variables
 'use strict';
 
-const https = require('https');
-const http = require('http');
-const url = require('url');
-const fs = require('fs');
-const path = require('path');
-const querystring = require('querystring');
-
-
 /////////////// Express Variables
 const express = require('express');
 const app = express();
@@ -34,11 +26,7 @@ exports.responder = functions.https.onRequest((req, res) => {
 /////////////// Page Creator
 exports.pageCreator = functions.https.onRequest((req,res) => {
     requestLogger(req, res);
-
     modules.createPage.createPage(req, res);
-
-
-
 });
 
 function requestLogger(req, res) {
