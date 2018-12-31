@@ -8,14 +8,20 @@ const fs = require('fs');
 const path = require('path');
 const querystring = require('querystring');
 
+
+/////////////// Express Variables
+const express = require('express');
+const app = express();
+
 /////////////// Firebase Variables
 const functions = require('firebase-functions');
 
-/////////////// Local Variables
+/////////////// Local Modules
 var modules = require('./modules.js');
 
 /////////////// Responder Core
 exports.responder = functions.https.onRequest((req, res) => {
+    requestLogger(req, res);
     var stringIndex = req.url.indexOf(".");
     console.log("String Index: " + stringIndex);
     if(stringIndex === -1) {
@@ -23,4 +29,24 @@ exports.responder = functions.https.onRequest((req, res) => {
     } else {
         console.error("Request included a file reference.");
     }
-})
+});
+
+/////////////// Page Creator
+exports.pageCreator = functions.https.onRequest((req,res) => {
+    requestLogger(req, res);
+
+    modules.createPage.createPage(req, res);
+
+
+
+});
+
+function requestLogger(req, res) {
+    console.log("Request Received");
+    console.log("Request Method: " + req.method);
+    console.log("Request URL: " + req.url);
+    console.log("Request Host: " + req.hostName);
+    console.log("Request Path: " + req.path);
+    console.log("Request Queries: ");
+    console.log(req.query);
+}

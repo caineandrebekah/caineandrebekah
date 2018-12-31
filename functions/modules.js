@@ -1,3 +1,5 @@
 module.exports = {
-    beginResponse: require('./response.js'),
+    beginResponse: require('./responder.js'),
+    createPage: require('./pageCreator.js'),
+    dataBase: require('./database.js')
  }

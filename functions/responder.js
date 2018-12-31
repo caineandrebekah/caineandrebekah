@@ -8,30 +8,25 @@ const fs = require('fs');
 const path = require('path');
 const querystring = require('querystring');
 
+
+/////////////// Express Variables
+const express = require('express');
+const app = express();
+
+/////////////// Firebase Variables
+const functions = require('firebase-functions');
+
+/////////////// Local Modules
+var modules = require('./modules.js');
+var realTime = require('./database.js');
+
 /////////////// Responder Scripts
-exports.beginResponse = function beginResponse(req, res) {
-    
+exports.beginResponse = function(req, res) {
     locateData(req, res);
-    
-    console.log("Response Initiated");
 }
 
-/////////////// Databse Authentication
-const admin = require("firebase-admin");
-const serviceAccount = require("./caineandrebekah-firebase-adminsdk-k6r6u-6ff7566357.json");
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://caineandrebekah.firebaseio.com"
-});
-
-/////////////// Databse Authentication
+/////////////// Database Query Generator
 function locateData(req, res) {
-    console.log("Request Method: " + req.method);
-    console.log("Request URL: " + req.url);
-    console.log("Request Host: " + req.hostName);
-    console.log("Request Path: " + req.path);
-    console.log("Request Queries: ");
-    console.log(req.query);
 
     var dataRoute = 'Routes' + req.path + `/`;
 
@@ -49,14 +44,14 @@ function retreiveData(req, res, checkedRoute) {
 
     console.log("Retreiving Database Data");
 
-    var db = admin.database();
-    var dbData = db.ref(checkedRoute);
+    var dbData = realTime.realTime.ref(checkedRoute);
     var localData = {};
   
     dbData.on('value', function(snapshot) {
         localData = snapshot.val();
         console.info(localData);
         if(localData !== null) {
+            console.log("Response Initiated");
             pullHeader(req, res, localData);
             pullFooter(req, res);
             endResponse(req, res);
