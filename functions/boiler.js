@@ -159,6 +159,7 @@ function loadPageHeadExternalJS(req, res, localData) {
     <script src="/scripts/presenter.js"></script>
     <script src="/scripts/navigation/navigation.js"></script>
     <script src="/scripts/navigation/prompt.js"></script>
+    <script src="/scripts/navigation/dot.js"></script>
     <script src="/scripts/app/app.js"></script>
     <script src="/scripts/account/signup.js"></script>`);
 }
