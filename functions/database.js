@@ -19,36 +19,42 @@ exports.realTime = realTime;
 
 /////////////// Set new Firestore data
 exports.setFireStoreData = function (collection, doc, data, mergeStatus) {
-    fireStore.collection(collection).doc(doc).set(data, {merge: mergeStatus}).then(ref => {
-        console.log('Added document');
-        return;
-    }).catch(err => {
-        console.log('Error Adding document', err);
-    });
+    var dataPath = fireStore.collection(collection).doc(doc);
+
+    dataPath.set(data, {merge: mergeStatus});
 }
 
 /////////////// Add new Firestore data
 exports.addFireStoreData = function (collection, doc, data) {
-    fireStore.collection(collection).doc(doc).add(data).then(ref => {
+    var dataPath = fireStore.collection(collection).doc(doc);
+
+    dataPath.add(data).then(ref => {
         console.log('Added document with ID: ', ref.id);
         return ref.id;
-    }).catch(err => {
-        console.log('Error Adding document', err);
+      }).catch(err => {
+        console.log('Couldnt add', err);
     });
 }
 
 /////////////// Read Firestore data
 exports.readFireStoreData = function (collection, doc) {
-    fireStore.collection(collection).doc(doc).get().then(doc => {
-        if (!doc.exists) {
+    var dataPath = fireStore.collection(collection).doc(doc);
+
+    finalData = dataPath.get()
+    .then(doc => {
+        if (doc.exists) {
+            var docData = doc.data();
+            console.log('Document data: ');
+            console.log(docData);
+            return docData;
+        } else {
             console.log('No such document!');
             return err;
-        } else {
-            console.log('Document data:', doc.data());
-            return doc.data();
-            poop();
         }
     }).catch(err => {
         console.log('Error getting document', err);
     });
+
+    console.log(finalData);
+    return finalData;
 }

@@ -13,6 +13,7 @@ var modules = require('./modules.js');
 
 /////////////// Responder Core
 exports.responder = functions.https.onRequest((req, res) => {
+    console.info('responder::: ');
     requestLogger(req, res);
     var stringIndex = req.url.indexOf(".");
     console.log("String Index: " + stringIndex);
@@ -25,6 +26,7 @@ exports.responder = functions.https.onRequest((req, res) => {
 
 /////////////// Page Creator
 exports.pageCreator = functions.https.onRequest((req,res) => {
+    console.info('pageCreator::: ');
     requestLogger(req, res);
     modules.createPage.createPage(req, res);
 });

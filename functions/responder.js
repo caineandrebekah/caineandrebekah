@@ -30,6 +30,9 @@ function retreiveData(req, res, checkedRoute) {
 
     console.log("Retreiving Database Data");
 
+    console.log('DBTEST::: ');
+    console.log(dataBase.readFireStoreData('routes', 'blog'));
+
     var dbData = dataBase.realTime.ref(checkedRoute);
     var localData = {};
   

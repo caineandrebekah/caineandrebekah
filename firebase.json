@@ -32,6 +32,10 @@
     ],
     "rewrites": [
       {
+        "source": "/createPage",
+        "function": "pageCreator"
+      },
+      {
         "source": "**",
         "function": "responder"
       },
