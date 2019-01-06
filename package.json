@@ -1,0 +1,26 @@
+{
+  "name": "caineandrebekah",
+  "version": "1.0.0",
+  "description": "project for caineandrebekah.com",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-tools": "^6.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaineLloyd/caineandrebekah.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Caine J Nielsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaineLloyd/caineandrebekah/issues"
+  },
+  "homepage": "https://github.com/CaineLloyd/caineandrebekah#readme"
+}

@@ -99,13 +99,13 @@ function loadPageHeadGoogleAnalytics(req, res, localData) {
 
 function loadPageHeadGoogleFirebase(req, res, localData) {
     res.write(`<!--Google Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
-    <!--<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>-->
-    <!--<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>-->
-    <!--<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-messaging.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-storage.js"></script>-->
     <script>
         // Initialize Firebase
         var config = {
