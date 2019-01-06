@@ -121,7 +121,11 @@
 }
 
 #card-dev-resources {
-  background-image: url("/resources/images/blog/technology.jpg");
+  background-image: url("/resources/images/projects/technology.jpg");
+}
+
+#card-plex {
+  background-image: url("/resources/images/projects/plex-logo.jpg");
 }
 
 #card-cold-one {
@@ -306,6 +310,10 @@
 
 #card-reliable-icons {
   background-image: url("/resources/images/dev-board/reliable-icons.png");
+}
+
+#card-drop-zone {
+  background-image: url("/resources/images/dev-board/drop-zone.png");
 }
 
 /*Favorite Music*/

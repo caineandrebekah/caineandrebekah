@@ -1,62 +1,15 @@
-const protocol = window.location.protocol;
-const href = window.location.href;
-const hostName = window.location.hostname;
-const pathName = window.location.pathname;
-
-console.groupCollapsed("Window Location");
-console.info("protocol: " + protocol);
-console.info("href: " + href);
-console.info("hostName: " + hostName);
-console.info("pathName: " + pathName);
-console.groupEnd();
-
-var dataRoute = 'Routes' + pathName + '/styles/';
-console.info('dataRoute: ' + dataRoute);
-
-var localData = {};
-
-function loadContent() {
-  if(pathName === "/") {
-    retreiveData('Routes/index/styles/');
-  } else {
-    retreiveData(dataRoute);
-  }
-}
-
-function retreiveData(checkedRoute) {
-  var db = firebase.database();
-  var dbData = db.ref(checkedRoute);
-  dbData.on('value', function(snapshot) {
-    localData = snapshot.val();
-    console.groupCollapsed("Firebase Database");
-    console.info(localData);
-    console.groupEnd();
-    if(localData != null) {
-      renderBoiler();
-    } else {
-      console.error("No Data Returned");
-    }
-  });
-}
-
-function renderBoiler() {
-  if(pathName === "/") {
-    $("#canvas-outer").load("/routes/index.html #canvas-inner", function (response, status, xhr) {
-      if ( status == "error" ) {
-        var msg = "Sorry but there was an error: ";
-        $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
-      } else {
-        console.log("Boilerplates Loaded");
-      }
-    });
-  } else {
-    $("#canvas-outer").load("/routes" + pathName + ".html #canvas-inner", function (response, status, xhr) {
-      if ( status == "error" ) {
-        var msg = "Sorry but there was an error: ";
-        alert( msg + xhr.status + " " + xhr.statusText );
-      } else {
-        console.log("Boilerplates Loaded");
-      }
-    });
-  }
+function loadLogger() {
+  console.log('Welcome to caineandrebekah.com!');
+  console.log('To report technical issues, go to https://www.caineandrebekah.com/support');
+  
+  console.groupCollapsed("Location data:");
+  console.info("href: " + location.href);
+  console.info("protocol: " + location.protocol);
+  console.info("hostName: " + location.hostname);
+  console.info("host: " + location.host);
+  console.info("port: " + location.port);
+  console.info("pathName: " + location.pathname);
+  console.info("hash: " + location.hash);
+  console.info("search: " + location.search);
+  console.groupEnd();
 }

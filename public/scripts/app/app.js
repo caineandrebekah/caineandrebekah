@@ -34,7 +34,7 @@ function changeView(view) {
 }
 
 function openView(viewName) {
-    $("#app-canvas-outer").load("/routes/app/view-" + viewName + ".html #app-canvas-inner", function (response, status, xhr) {
+    $("#app-canvas-outer").load("/views/view-" + viewName + ".html #app-canvas-inner", function (response, status, xhr) {
         if ( status == "error" ) {
             var msg = "Sorry but there was an error: ";
             alert(msg + xhr.status + " " + xhr.statusText);

@@ -2,6 +2,7 @@ const fs = require('fs');
 
 exports.loadBoiler = function(req, res, localData) {
     loadPageHead(req, res, localData);
+    loadPageContent(req, res, localData);
     loadPageFoot(req, res, localData);
 }
 
@@ -121,7 +122,8 @@ function loadPageHeadGoogleFirebase(req, res, localData) {
 
 function loadPageHeadStyleSheets(req, res, localData) {
     res.write(`<!--External CSS Stylesheets-->
-    <link rel="stylesheet" href="/styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/styles/libraries/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/styles/libraries/dropzone.css" type="text/css">
     <link rel="stylesheet" href="/styles/index.css" type="text/css">
     <link rel="stylesheet" href="/styles/styles.css" type="text/css">
     <link rel="stylesheet" href="/styles/navigation/navigation.css" type="text/css">
@@ -161,7 +163,8 @@ function loadPageHeadExternalJS(req, res, localData) {
     <script src="/scripts/navigation/prompt.js"></script>
     <script src="/scripts/navigation/dot.js"></script>
     <script src="/scripts/app/app.js"></script>
-    <script src="/scripts/account/signup.js"></script>`);
+    <script src="/scripts/account/signup.js"></script>
+    <script src="/scripts/libraries/dropzone.js"></script>`);
 }
 
 function loadPageHeadEnd(req, res, localData) {
@@ -169,6 +172,16 @@ function loadPageHeadEnd(req, res, localData) {
     <body>
         <!--Start Of Content Body-->
         <main id="canvas-outer">`);
+}
+
+function loadPageContent(req, res, localData) {
+    var contentData = './routes' + localData.routePath + '.html';
+    if (contentData === './routes/.html') {
+        contentData = './routes/index.html';   
+    }
+    var finishedData = fs.readFileSync(contentData);
+    res.write(finishedData);
+    console.log("Content Loaded");
 }
 
 function loadPageFoot(req, res, localData) {
@@ -185,8 +198,8 @@ function loadPageFootStart(req, res, localData) {
 
 function loadPageFootAccent(req, res, localData) {
     if (localData.hasFooter === 'true') {
-        var footerdata = fs.readFileSync('./templates/footer-accent-template.html');
-        res.write(footerdata);
+        var footerData = fs.readFileSync('./templates/footer-accent-template.html');
+        res.write(footerData);
     }
 }
 
@@ -195,7 +208,7 @@ function loadPageFootEnd(req, res, localData) {
     <!--Only run Javascript once the page has fully finished loading.-->
     <script type="text/javascript">
         function autorun() {
-            loadContent();
+            loadLogger();
         }
         if (window.addEventListener) window.addEventListener("load", autorun, false);
         else if (window.attachEvent) window.attachEvent("onload", autorun);

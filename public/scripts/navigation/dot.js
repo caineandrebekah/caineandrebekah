@@ -1,5 +1,4 @@
 function openDot() {
-    console.log("WOW");
     if ($(".dot-medium").css("display") == "block") {
         console.log("Closed Dot Menu");
         $(".dot-medium").hide();
