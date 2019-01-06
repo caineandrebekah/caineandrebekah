@@ -11,6 +11,9 @@ const functions = require('firebase-functions');
 /////////////// Local Modules
 var modules = require('./modules.js');
 
+/////////////// Built in Modules
+var url = require('url');
+
 /////////////// Responder Core
 exports.responder = functions.https.onRequest((req, res) => {
     console.info('responder::: ');
@@ -34,8 +37,9 @@ exports.pageCreator = functions.https.onRequest((req,res) => {
 function requestLogger(req, res) {
     console.log("Request Received");
     console.log("Request Method: " + req.method);
-    console.log("Request URL: " + req.url);
+    console.log("Request Scheme: " + req.scheme);
     console.log("Request Host: " + req.hostName);
+    console.log("Request URL: " + req.url);
     console.log("Request Path: " + req.path);
     console.log("Request Queries: ");
     console.log(req.query);

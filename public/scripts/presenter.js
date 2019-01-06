@@ -47,7 +47,6 @@ function renderBoiler() {
         $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
       } else {
         console.log("Boilerplates Loaded");
-        renderFooter();
       }
     });
   } else {
@@ -57,23 +56,7 @@ function renderBoiler() {
         alert( msg + xhr.status + " " + xhr.statusText );
       } else {
         console.log("Boilerplates Loaded");
-        renderFooter();
       }
     });
-  }
-}
-
-function renderFooter() {
-  if (localData.hasFooter === "true") {
-    $("#footer-canvas-outer").load("/templates/footer/footer.html #footer-canvas-inner", function (response, status, xhr) {
-      if ( status == "error" ) {
-          var msg = "Sorry but there was an error: ";
-          alert(msg + xhr.status + " " + xhr.statusText);
-      } else {
-          console.log("Footer Loaded");
-      }
-  });
-  } else {
-    console.log("Skipped Footer");
   }
 }

@@ -7,45 +7,25 @@ var boiler = require('./boiler.js');
 
 /////////////// Responder Scripts
 exports.beginResponse = function(req, res) {
-    locateData(req, res);
+    retreiveData(req, res, req.path);
 }
 
-/////////////// Database Query Generator
-function locateData(req, res) {
-
-    var dataRoute = 'Routes' + req.path + `/`;
-
-    if(req.path === "/") {
-        dataRoute = 'Routes/index/';
-        console.info('dataRoute: ' + dataRoute);
-        retreiveData(req, res, dataRoute);
-    } else {
-        console.info('dataRoute: ' + dataRoute);
-        retreiveData(req, res, dataRoute);
-    }
-}
-
-/////////////// Database Data Retreival
+/////////////// Database Data Retreival NEW
 function retreiveData(req, res, checkedRoute) {
+    console.log("Requesting Database Data");
 
-    console.log("Retreiving Database Data");
+    var check = {};
+    check.field = 'routePath';
+    check.arg = '==';
+    check.check = checkedRoute
 
-    console.log('DBTEST::: ');
-    console.log(dataBase.readFireStoreData('routes', 'blog'));
+    dataBase.queryFireStoreData('routes', check, function(returnedData) {
+        console.log('Returned Data: ');
+        console.log(returnedData);
 
-    var dbData = dataBase.realTime.ref(checkedRoute);
-    var localData = {};
-  
-    dbData.on('value', function(snapshot) {
-        localData = snapshot.val();
-        console.info(localData);
-        if(localData !== null) {
-            console.log("Response Initiated");
-            boiler.loadBoiler(req, res, localData);
+        console.log("Response Initiated");
+            boiler.loadBoiler(req, res, returnedData);
             endResponse(req, res);
-        } else {
-        console.error("No Data Returned");
-        }
     });
 }
 

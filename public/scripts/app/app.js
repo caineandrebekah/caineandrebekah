@@ -46,66 +46,6 @@ function openView(viewName) {
 
 // Page Creator
 
-function writePageData(pageId, route, pageTitle, pageType) {
-    var routeNameField = document.getElementById("FrouteName");
-    var pageTitleField = document.getElementById("FpageTitle");
-
-    var hasHNavField = document.getElementById("FhasHNav");
-    var hasVNavField = document.getElementById("FhasVNav");
-    var hasFooterField = document.getElementById("FhasFooter");
-    var pageTypeField = document.getElementById("FpageType");
-
-    var signUpButton = document.getElementById("signUpButton");
-
-    var routeName = routeNameField.value;
-    var pageTitle = pageTitleField.value;
-
-    var hasHNav = hasHNavField.value;
-    var hasVNav = hasVNavField.value;
-    var hasFooter = hasFooterField.value;
-    var pageType = pageTypeField.value;
-
-    if(routeName != '', pageTitle !='') {
-        console.groupCollapsed("Form Data");
-        console.log(routeName);
-        console.log(pageTitle);
-    
-        console.log(hasHNav);
-        console.log(hasVNav);
-        console.log(hasFooter);
-        console.log(pageType);
-        console.groupEnd();
-
-        firebase.database().ref('Routes' + routeName).set({
-            routeName: routeName,
-            pageTitle: pageTitle,
-            styles: {pageType: pageType, hasHNav: hasHNav, hasVNav: hasVNav, hasFooter: hasFooter}
-        });
-    
-        routeNameField.value = "";
-        pageTitleField.value = "";
-    
-        hasHNavField.value = "";
-        hasVNavField.value = "";
-        hasFooterField.value = "";
-        pageTypeField.value = "";
-        signupButton.innerHTML = "Create another Page";
-    } else {
-        signupButton.innerHTML = "Error";
-    }
-};
-
-
-
-
-
-
-
-
-
-
-
-
 function chooseRoute(loc) {
     console.log("Existing 1 Opened");
     $("#route-menu-" + loc + "-a").hide();
@@ -131,9 +71,11 @@ var routePart3 = "";
 function completeRoute(loc, met) {
     var pageRoute = "";
     if (met == "choose") {
-        pageRoute = $("#select-page-route-" + loc).val();
+        pageRouteRaw = $("#select-page-route-" + loc).val();
+        pageRoute = pageRouteRaw.toLowerCase();
     } else if (met == "create") {
-        pageRoute = $("#route-field-" + loc).val();
+        pageRouteRaw = $("#route-field-" + loc).val();
+        pageRoute = pageRouteRaw.toLowerCase();
     }
     console.log(pageRoute);
     if (pageRoute !== "") {
@@ -165,61 +107,62 @@ function completeRoute(loc, met) {
     }
 }
 
+var fullRoute = '';
+
 function saveRoute() {
-    var fullRoute = (routePart1 + "/" + routePart2 + "/" + routePart3);
+    if (routePart1 !== "" && routePart2 == "" && routePart3 == "") {
+        fullRoute = ("/" + routePart1);
+    } else if (routePart1 !== "" && routePart2 !== "" && routePart3 == "") {
+        fullRoute = ("/" + routePart1 + "/" + routePart2);
+    } else if (routePart1 !== "" && routePart2 !== "" && routePart3 !== "") {
+        fullRoute = ("/" + routePart1 + "/" + routePart2 + "/" + routePart3);
+    } else {
+        console.error('THIS SHOULDNT EVER HAPPEN');
+    }
     alert("Page Created at: " + fullRoute);
     console.log(fullRoute);
 }
 
+function writePageData() {
 
+    var pageTitleRaw = $("#pageTitleField").val()
+    var pageTitle = pageTitleRaw.toLowerCase();
 
+    var hasHNav = $('#hasHNavField').prop('checked');
+    var hasVNav = $('#hasVNavField').prop('checked');
+    var hasFooter = $('#hasFooterField').prop('checked');
 
+    var pageType = $("#pageTypeField").val();
 
+    if(fullRoute !== '' && pageTitle !== '') {
+        console.groupCollapsed("Form Data");
+        console.log(fullRoute);
+        console.log(pageTitle);
+    
+        console.log(hasHNav);
+        console.log(hasVNav);
+        console.log(hasFooter);
 
+        console.log(pageType);
+        console.groupEnd();
 
+        finalGet = '/createPage?' + 'routeName=' + pageTitle + '&routePath=' + fullRoute + '&hasHNav=' + hasHNav + '&hasVNav=' + hasVNav + '&pageType=' + pageType + '&hasFooter=' + hasFooter;
+        console.log(finalGet);
 
+        $.get(finalGet);
 
+        $("#signUpButton").val('Create another Page');
 
+        $("#pageTitleField").val('');
+    
+        $("#hasHNavField").val('');
+        $("#hasVNavField").val('');
+        $("#hasFooterField").val('');
 
-
-
-
-
-
-
-
-
-
-
-
-
-function readPageData(checkedRoute) {
-  var db = firebase.database();
-  var dbData = db.ref(checkedRoute);
-  dbData.on('value', function(snapshot) {
-    localData = snapshot.val();
-    console.groupCollapsed("Firebase Database");
-    console.info(localData);
-    console.groupEnd();
-    if(localData != null) {
-      
-
-
-
-
-
-
-
-        console.log("Render Nodes");
-
-
-
-
-
+        $("#pageTypeField").val('');
 
         
     } else {
-      console.error("No Data Returned");
+        $("#signUpButton").val('Error');
     }
-  });
-}
+};

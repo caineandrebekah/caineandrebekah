@@ -45,7 +45,7 @@ function loadPageHeadViewPort(req, res, localData) {
 
 function loadPageHeadTitle(req, res, localData) {
     res.write(`<!--Document Title-->
-    <title>${localData.pageTitle} | Caine And Rebekah</title>`);
+    <title>${localData.routeName} | Caine And Rebekah</title>`);
 }
 
 function loadPageHeadTags(req, res, localData) {
@@ -172,7 +172,35 @@ function loadPageHeadEnd(req, res, localData) {
 }
 
 function loadPageFoot(req, res, localData) {
-    var footerdata = fs.readFileSync('./templates/footer-template.html');
-    res.write(footerdata);
+    loadPageFootStart(req, res, localData);
+    loadPageFootAccent(req, res, localData);
+    loadPageFootEnd(req, res, localData);
     console.log("Foot Loaded");
+}
+
+function loadPageFootStart(req, res, localData) {
+    res.write(`</main>
+    <!--End Of Content Body-->`);
+}
+
+function loadPageFootAccent(req, res, localData) {
+    if (localData.hasFooter === 'true') {
+        var footerdata = fs.readFileSync('./templates/footer-accent-template.html');
+        res.write(footerdata);
+    }
+}
+
+function loadPageFootEnd(req, res, localData) {
+    res.write(`<div id="prompt-loader"></div>
+    <!--Only run Javascript once the page has fully finished loading.-->
+    <script type="text/javascript">
+        function autorun() {
+            loadContent();
+        }
+        if (window.addEventListener) window.addEventListener("load", autorun, false);
+        else if (window.attachEvent) window.attachEvent("onload", autorun);
+        else window.onload = autorun;
+    </script>
+    </body>
+</html>`);
 }

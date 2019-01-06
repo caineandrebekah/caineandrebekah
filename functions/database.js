@@ -37,15 +37,16 @@ exports.addFireStoreData = function (collection, doc, data) {
 }
 
 /////////////// Read Firestore data
-exports.readFireStoreData = function (collection, doc) {
+exports.readFireStoreData = function (collection, doc, func) {
     var dataPath = fireStore.collection(collection).doc(doc);
 
-    finalData = dataPath.get()
+    dataPath.get(func)
     .then(doc => {
         if (doc.exists) {
             var docData = doc.data();
             console.log('Document data: ');
             console.log(docData);
+            func(docData);
             return docData;
         } else {
             console.log('No such document!');
@@ -54,7 +55,28 @@ exports.readFireStoreData = function (collection, doc) {
     }).catch(err => {
         console.log('Error getting document', err);
     });
+}
 
-    console.log(finalData);
-    return finalData;
+/////////////// Query Firestore data
+exports.queryFireStoreData = function (collection, query, func) {
+    var queryPath = fireStore.collection(collection).where(query.field, query.arg, query.check);
+
+    queryPath.get(func)
+    .then(querySnapshot => {
+            // eslint-disable-next-line promise/always-return
+            if (!querySnapshot.empty) {
+                querySnapshot.forEach(documentSnapshot => {
+                    var docData = documentSnapshot.data();
+                    console.log(`Found document(s) at ${documentSnapshot.ref.path}`);
+                    func(docData);
+                    return docData;
+                })
+            } else {
+                console.log('No such document(s)!');
+                return err;
+            }
+        }
+    ).catch(err => {
+        console.log('Error getting document(s)', err);
+    });
 }

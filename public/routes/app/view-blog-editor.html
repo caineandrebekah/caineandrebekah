@@ -2,126 +2,116 @@
     <section class="section section-full-free section-center">
         <h1>Create a new page</h1>
         <div class="node node-1">
-            <div class="item item-setting box-shadow-medium">
+            <div class="card-free box-shadow-medium">
+                    <div>
+                        <span id="current-host">https://website.com/</span>
 
+                        <span id="route-builder-1">
+                            <span id="route-menu-1-a">
+                                <button id="choose-1" onclick="chooseRoute(1)">Choose</button>
+                                <button id="create-1" onclick="createRoute(1);">Create</button>
+                            </span>
 
+                            <span id="route-menu-1-b">
+                                <select id="select-page-route-1">
+                                    <option value="about">blog</option>
+                                    <option value="about">about</option>
+                                    <option value="account">account</option>
+                                    <option value="app">app</option>
+                                    <option value="dev">dev</option>
+                                    <option value="gallery">gallery</option>
+                                    <option value="projects">projects</option>
+                                    <option value="store">store</option>
+                                    <option value="support">support</option>
+                                </select>
+                                <button onClick="closeRoute(1);">X</button>
+                                <button onClick="completeRoute(1, 'choose');">>></button>
+                            </span>
 
+                            <span id="route-menu-1-c">
+                                <input type="text" id="route-field-1" value=""></input>
+                                <button onClick="closeRoute(1);">X</button>
+                                <button onClick="completeRoute(1, 'create');">>></button>
+                            </span>
 
+                            <span id="route-menu-1-d">
+                            </span>
+                        </span>
 
+                        <span id="route-builder-2">
+                            /
+                            <span id="route-menu-2-a">
+                                <button id="choose-2" onclick="chooseRoute(2)">Choose</button>
+                                <button id="create-2" onclick="createRoute(2);">Create</button>
+                            </span>
 
+                            <span id="route-menu-2-b">
+                                <select id="select-page-route-2">
+                                    <option value="example">example</option>
+                                </select>
+                                <button onClick="closeRoute(2);">X</button>
+                                <button onClick="completeRoute(2, 'choose');">>></button>
+                            </span>
 
+                            <span id="route-menu-2-c">
+                                <input type="text" id="route-field-2" value=""></input>
+                                <button onClick="closeRoute(2);">X</button>
+                                <button onClick="completeRoute(2, 'create');">>></button>
+                            </span>
 
-                <form>
-                    Page Location: <input type="text" id="FrouteName" value=""></input><br><br>
-                    Page Name: <input type="text" id="FpageTitle" value=""></input><br><br>
+                            <span id="route-menu-2-d">
+                            </span>
+                        </span> 
 
-                    Horizontal Nav Bar: <input type="checkbox" id="FhasHNav" name="hasHNav" value="true"></input><br><br>
-                    Vertical NavBar: <input type="checkbox" id="FhasVNav" name="hasVNav" value="true"></input><br><br>
-                    Page Footer: <input type="checkbox" id="FhasFooter" name="hasfooter" value="true"></input><br><br>
+                        <span id="route-builder-3">
+                            /
+                            <span id="route-menu-3-a">
+                                <button id="choose-3" onclick="chooseRoute(3)">Choose</button>
+                                <button id="create-3" onclick="createRoute(3);">Create</button>
+                            </span>
 
-                    Page Type:
-                    <select id="FpageType">
-                        <option value="blog">Blog</option>
-                        <option value="list">List</option>
-                        <option value="poster">Poster</option>
-                        <option value="album">Album</option>
-                    </select>
+                            <span id="route-menu-3-b">
+                                <select id="select-page-route-3">
+                                    <option value="example">example</option>
+                                </select>
+                                <button onClick="closeRoute(3);">X</button>
+                                <button onClick="completeRoute(3, 'choose');">>></button>
+                            </span>
+
+                            <span id="route-menu-3-c">
+                                <input type="text" id="route-field-3" value=""></input>
+                                <button onClick="closeRoute(3);">X</button>
+                                <button onClick="completeRoute(3, 'create');">>></button>
+                            </span>
+
+                            <span id="route-menu-3-d">
+                            </span>
+                        </span>
+                        <span id="route-menu-4">
+                            <button onClick="saveRoute();">~ Complete</button>
+                        </span>
+                    </div>
+                    <br><br><br>
+                    <div>Page Name: <input type="text" id="pageTitleField" value=""></input></div>
+                    <br><br><br>
+                    <div>Horizontal Nav Bar: <input type="checkbox" id="hasHNavField" name="hasHNav" value="true"></input></div>
+                    <br><br><br>
+                    <div>Vertical NavBar: <input type="checkbox" id="hasVNavField" name="hasVNav" value="true"></input></div>
+                    <br><br><br>
+                    <div>Page Footer: <input type="checkbox" id="hasFooterField" name="hasfooter" value="true"></input></div>
+                    <br><br><br>
+                    <div>Page Type:
+                        <select id="pageTypeField">
+                            <option value="blog">Blog</option>
+                            <option value="list">List</option>
+                            <option value="poster">Poster</option>
+                            <option value="album">Album</option>
+                        </select>
+                    </div>
+                    <br><br><br>
                     <div class="button button-blue" id="signupButton" onClick="writePageData();">Create Page</div>
-                </form>
-
-                <span id="current-host">https://website.com/</span>
-
-                <span id="route-builder-1">
-                    <span id="route-menu-1-a">
-                        <button id="choose-1" onclick="chooseRoute(1)">Choose</button>
-                        <button id="create-1" onclick="createRoute(1);">Create</button>
-                    </span>
-
-                    <span id="route-menu-1-b">
-                        <select id="select-page-route-1">
-                            <option value="about">blog</option>
-                            <option value="about">about</option>
-                            <option value="account">account</option>
-                            <option value="app">app</option>
-                            <option value="dev">dev</option>
-                            <option value="gallery">gallery</option>
-                            <option value="projects">projects</option>
-                            <option value="store">store</option>
-                            <option value="support">support</option>
-                        </select>
-                        <button onClick="closeRoute(1);">X</button>
-                        <button onClick="completeRoute(1, 'choose');">>></button>
-                    </span>
-
-                    <span id="route-menu-1-c">
-                        <input type="text" id="route-field-1" value=""></input>
-                        <button onClick="closeRoute(1);">X</button>
-                        <button onClick="completeRoute(1, 'create');">>></button>
-                    </span>
-
-                    <span id="route-menu-1-d">
-                    </span>
-                </span>
-
-                <span id="route-builder-2">
-                    /
-                    <span id="route-menu-2-a">
-                        <button id="choose-2" onclick="chooseRoute(2)">Choose</button>
-                        <button id="create-2" onclick="createRoute(2);">Create</button>
-                    </span>
-
-                    <span id="route-menu-2-b">
-                        <select id="select-page-route-2">
-                            <option value="example">example</option>
-                        </select>
-                        <button onClick="closeRoute(2);">X</button>
-                        <button onClick="completeRoute(2, 'choose');">>></button>
-                    </span>
-
-                    <span id="route-menu-2-c">
-                        <input type="text" id="route-field-2" value=""></input>
-                        <button onClick="closeRoute(2);">X</button>
-                        <button onClick="completeRoute(2, 'create');">>></button>
-                    </span>
-
-                    <span id="route-menu-2-d">
-                    </span>
-                </span> 
-
-                <span id="route-builder-3">
-                    /
-                    <span id="route-menu-3-a">
-                        <button id="choose-3" onclick="chooseRoute(3)">Choose</button>
-                        <button id="create-3" onclick="createRoute(3);">Create</button>
-                    </span>
-
-                    <span id="route-menu-3-b">
-                        <select id="select-page-route-3">
-                            <option value="example">example</option>
-                        </select>
-                        <button onClick="closeRoute(3);">X</button>
-                        <button onClick="completeRoute(3, 'choose');">>></button>
-                    </span>
-
-                    <span id="route-menu-3-c">
-                        <input type="text" id="route-field-3" value=""></input>
-                        <button onClick="closeRoute(3);">X</button>
-                        <button onClick="completeRoute(3, 'create');">>></button>
-                    </span>
-
-                    <span id="route-menu-3-d">
-                    </span>
-                </span>
-                <span id="route-menu-4">
-                    <button onClick="saveRoute();">~ Complete</button>
-                </span>
             </div>
         </div>
-
-
         <button onClick="readPageData('Routes');">Load Pages</button>
-
-
-
     </section>
 </div>
