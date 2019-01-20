@@ -1,6 +1,6 @@
 /////////////// Firebase Realtime Database and Cloud Firestore
 const admin = require("firebase-admin");
-const serviceAccount = require("./fb-admin/caineandrebekah-firebase-adminsdk-k6r6u-6e1c3f3c69.json")
+const serviceAccount = require("./fb-admin/caineandrebekah-firebase-adminsdk-xcfjn-990f95242c.json")
 
 const firebaseConfig = {
     credential: admin.credential.cert(serviceAccount),

@@ -1,0 +1,11 @@
+
+Pinging caineandrebekah.com [151.101.65.195] with 32 bytes of data:
+Reply from 151.101.65.195: bytes=32 time=27ms TTL=58
+Reply from 151.101.65.195: bytes=32 time=27ms TTL=58
+Reply from 151.101.65.195: bytes=32 time=27ms TTL=58
+Reply from 151.101.65.195: bytes=32 time=29ms TTL=58
+
+Ping statistics for 151.101.65.195:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 27ms, Maximum = 29ms, Average = 27ms

@@ -1,0 +1,48 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : the-big-cake
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (2) I219-V
+   Physical Address. . . . . . . . . : 4C-CC-6A-BA-2D-47
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : 802.11ac Wireless LAN Card
+   Physical Address. . . . . . . . . : A0-40-A0-72-CC-A9
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::5ab:dcf9:b341:196f%4(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.0.33(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 60833952
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-23-BC-92-D4-4C-CC-6A-BA-2D-47
+   DNS Servers . . . . . . . . . . . : 192.168.0.1
+                                       8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Teredo Tunneling Adapter
+   Physical Address. . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:0:9d38:90d7:381e:36a4:b456:fc68(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::381e:36a4:b456:fc68%10(Preferred) 
+   Default Gateway . . . . . . . . . : ::
+   DHCPv6 IAID . . . . . . . . . . . : 167772160
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-23-BC-92-D4-4C-CC-6A-BA-2D-47
+   NetBIOS over Tcpip. . . . . . . . : Disabled

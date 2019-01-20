@@ -4,7 +4,8 @@
   "description": "project for caineandrebekah.com",
   "main": "index.js",
   "dependencies": {
-    "firebase-tools": "^6.2.2"
+    "firebase-tools": "^6.2.2",
+    "twilio": "^3.26.1"
   },
   "devDependencies": {},
   "scripts": {
