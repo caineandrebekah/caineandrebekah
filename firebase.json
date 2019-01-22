@@ -25,8 +25,13 @@
       "type" : 301
       },
       {
-        "source": "/example",
-        "destination": "https://example-website.com",
+        "source": "/admin",
+        "destination": "/fb-admin",
+        "type" : 301
+      },
+      {
+        "source": "/fb-admin",
+        "destination": "https://console.firebase.google.com/project/caineandrebekah/overview",
         "type" : 301
       }
     ],
