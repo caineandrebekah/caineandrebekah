@@ -62,6 +62,7 @@ exports.queryFireStoreData = function (collection, query, func) {
     var queryPath = fireStore.collection(collection).where(query.field, query.arg, query.check);
 
     queryPath.get(func)
+    // eslint-disable-next-line consistent-return
     .then(querySnapshot => {
             // eslint-disable-next-line promise/always-return
             if (!querySnapshot.empty) {
