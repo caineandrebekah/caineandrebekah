@@ -99,7 +99,9 @@ function loadPageHeadGoogleAnalytics(req, res, localData) {
 
 function loadPageHeadGoogleFirebase(req, res, localData) {
     res.write(`<!--Google Firebase-->
+    <!-- update the version number as needed -->
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-functions.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
