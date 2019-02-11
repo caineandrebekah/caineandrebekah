@@ -34,6 +34,14 @@ exports.pageCreator = functions.https.onRequest((req,res) => {
     modules.createPage.createPage(req, res);
 });
 
+/////////////// Page Creator
+exports.logger = functions.https.onRequest((req,res) => {
+    console.info('logger::: ');
+    requestLogger(req, res);
+    res.write('<h1>Logger</h1>');
+    res.end();
+});
+
 function requestLogger(req, res) {
     console.log("Request Received");
     console.log("Request Method: " + req.method);
@@ -44,3 +52,4 @@ function requestLogger(req, res) {
     console.log("Request Queries: ");
     console.log(req.query);
 }
+

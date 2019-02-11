@@ -1,6 +1,10 @@
 node_modules
 
+.firebase
+# https://stackoverflow.com/questions/52130772/whats-the-purpose-of-firebase-hosting-alphanum-cache #
+
 functions/fb-admin/
+# https://firebase.google.com/docs/admin/setup?authuser=0 #
 
 # Compiled source #
 ###################
