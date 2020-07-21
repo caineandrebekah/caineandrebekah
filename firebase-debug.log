@@ -1,39 +1,282 @@
-[debug] [2019-01-01T08:21:20.728Z] ----------------------------------------------------------------------
-[debug] [2019-01-01T08:21:20.730Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-01-01T08:21:20.730Z] CLI Version:   6.2.2
-[debug] [2019-01-01T08:21:20.730Z] Platform:      win32
-[debug] [2019-01-01T08:21:20.730Z] Node Version:  v10.15.0
-[debug] [2019-01-01T08:21:20.731Z] Time:          Tue Jan 01 2019 01:21:20 GMT-0700 (Mountain Standard Time)
-[debug] [2019-01-01T08:21:20.731Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-01-01T08:21:20.739Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-01-01T08:21:20.739Z] > authorizing via signed-in user
-[debug] [2019-01-01T08:21:20.739Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
-[debug] [2019-01-01T08:21:20.740Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-01-01T08:21:20.740Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-01-01T08:21:20.971Z] <<< HTTP RESPONSE 200
-[debug] [2019-01-01T08:21:20.978Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+[debug] [2020-03-17T02:45:15.550Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:45:15.551Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-17T02:45:15.551Z] CLI Version:   7.15.0
+[debug] [2020-03-17T02:45:15.552Z] Platform:      win32
+[debug] [2020-03-17T02:45:15.552Z] Node Version:  v12.16.1
+[debug] [2020-03-17T02:45:15.552Z] Time:          Mon Mar 16 2020 20:45:15 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-17T02:45:15.552Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:45:15.552Z] 
+[debug] [2020-03-17T02:45:15.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-17T02:45:15.562Z] > authorizing via signed-in user
+[debug] [2020-03-17T02:45:15.562Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2020-03-17T02:45:15.566Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
 
-[debug] [2019-01-01T08:21:21.269Z] <<< HTTP RESPONSE 200
-[debug] [2019-01-01T08:21:21.272Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah  
+[debug] [2020-03-17T02:45:15.849Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:45:15.855Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah  
  
-[debug] [2019-01-01T08:21:21.490Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:45:16.126Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'c:\Users\caine\Desktop\caineandrebekah'...
+[info] === Serving from 'D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah'...
 [info] 
-[info] i  functions: Preparing to emulate functions.
-[debug] [2019-01-01T08:21:21.984Z] Fetching environment
-[debug] [2019-01-01T08:21:21.987Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501:getServerAppConfig  
+[debug] [2020-03-17T02:45:16.143Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah/webApps/-/config  
  
-[debug] [2019-01-01T08:21:21.987Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/692416682501/clients/_:getWebAppConfig  
- 
-[debug] [2019-01-01T08:21:22.331Z] <<< HTTP RESPONSE 200
-[debug] [2019-01-01T08:21:22.331Z] Starting @google-cloud/functions-emulator
-[debug] [2019-01-01T08:21:22.463Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:45:16.439Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
-[debug] [2019-01-01T08:21:23.989Z] Parsing function triggers
-[info] +  functions: responder: http://localhost:5001/caineandrebekah/us-central1/responder
-[info] +  functions: pageCreator: http://localhost:5001/caineandrebekah/us-central1/pageCreator
-[info] [hosting] Rewriting / to local function responder
+[warn] !  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions" for Cloud Functions...
+[debug] [2020-03-17T02:45:18.180Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:45:18.180Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:45:18.181Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:45:18.181Z] [worker-~diagnostic~-be3f32c9-ea33-4a5e-bbca-7e28aee37aaa]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\18492
+[debug] [2020-03-17T02:45:18.181Z] [worker-~diagnostic~-be3f32c9-ea33-4a5e-bbca-7e28aee37aaa]: BUSY
+[debug] [2020-03-17T02:45:18.455Z] [runtime-status] [18492] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:45:18.455Z] [runtime-status] [18492] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:45:18.459Z] [runtime-status] [18492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:45:18.461Z] [runtime-status] [18492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:45:18.478Z] [worker-~diagnostic~-be3f32c9-ea33-4a5e-bbca-7e28aee37aaa]: exited
+[debug] [2020-03-17T02:45:18.478Z] [worker-~diagnostic~-be3f32c9-ea33-4a5e-bbca-7e28aee37aaa]: FINISHED
+[debug] [2020-03-17T02:47:30.529Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:47:31.538Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:47:31.546Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:47:31.546Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:47:31.546Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:47:31.547Z] [worker-~diagnostic~-35726d03-9eb3-4860-8df4-0c8abfe01dc6]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\24220
+[debug] [2020-03-17T02:47:31.547Z] [worker-~diagnostic~-35726d03-9eb3-4860-8df4-0c8abfe01dc6]: BUSY
+[debug] [2020-03-17T02:47:31.832Z] [runtime-status] [24220] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:47:31.832Z] [runtime-status] [24220] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:47:31.836Z] [runtime-status] [24220] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:47:31.838Z] [runtime-status] [24220] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:47:31.854Z] [worker-~diagnostic~-35726d03-9eb3-4860-8df4-0c8abfe01dc6]: exited
+[debug] [2020-03-17T02:47:31.855Z] [worker-~diagnostic~-35726d03-9eb3-4860-8df4-0c8abfe01dc6]: FINISHED
+[debug] [2020-03-17T02:47:36.521Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:47:37.521Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:47:37.527Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:47:37.527Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:47:37.527Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:47:37.527Z] [worker-~diagnostic~-7f78a57f-f2bf-4410-9a43-9b5c06b1b6ab]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\13432
+[debug] [2020-03-17T02:47:37.527Z] [worker-~diagnostic~-7f78a57f-f2bf-4410-9a43-9b5c06b1b6ab]: BUSY
+[debug] [2020-03-17T02:47:37.812Z] [runtime-status] [13432] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:47:37.812Z] [runtime-status] [13432] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[warn] !  The Cloud Functions directory you specified does not have a "package.json" file, so we can't load it.
+[debug] [2020-03-17T02:47:37.815Z] [runtime-status] [13432] Error in handleMessage: {"frb":{"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","projectId":"caineandrebekah","triggerId":"","emulators":{},"disabled_features":{"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true},"socketPath":"\\\\?\\pipe\\D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\13432"},"opts":{"nodeBinary":"C:\\Program Files\\nodejs\\node.exe"}} => Error: Could not find package.json: Error: Could not find package.json
+    at C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:126:19
+    at Generator.next (<anonymous>)
+    at C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:4:12)
+    at resolveDeveloperNodeModule (C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:122:12)
+    at C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:165:38
+    at Generator.next (<anonymous>)
+    at C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:8:71
+    at new Promise (<anonymous>)
+[warn] !  functions: Could not find package.json
+[warn] !  Your function was killed because it raised an unhandled error.
+[debug] [2020-03-17T02:47:37.830Z] [worker-~diagnostic~-7f78a57f-f2bf-4410-9a43-9b5c06b1b6ab]: exited
+[debug] [2020-03-17T02:47:37.831Z] [worker-~diagnostic~-7f78a57f-f2bf-4410-9a43-9b5c06b1b6ab]: FINISHED
+[debug] [2020-03-17T02:47:37.978Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:47:38.990Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:47:39.001Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:47:39.003Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:47:39.003Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:47:39.003Z] [worker-~diagnostic~-c150857f-7b52-4752-aebe-cd52f16d4182]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\19068
+[debug] [2020-03-17T02:47:39.003Z] [worker-~diagnostic~-c150857f-7b52-4752-aebe-cd52f16d4182]: BUSY
+[debug] [2020-03-17T02:47:39.266Z] [runtime-status] [19068] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:47:39.267Z] [runtime-status] [19068] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:47:39.270Z] [runtime-status] [19068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:47:39.272Z] [runtime-status] [19068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:47:39.288Z] [worker-~diagnostic~-c150857f-7b52-4752-aebe-cd52f16d4182]: exited
+[debug] [2020-03-17T02:47:39.289Z] [worker-~diagnostic~-c150857f-7b52-4752-aebe-cd52f16d4182]: FINISHED
+[debug] [2020-03-17T02:47:41.778Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:47:46.037Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:47:46.039Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-17T02:47:46.039Z] CLI Version:   7.15.0
+[debug] [2020-03-17T02:47:46.039Z] Platform:      win32
+[debug] [2020-03-17T02:47:46.039Z] Node Version:  v12.16.1
+[debug] [2020-03-17T02:47:46.040Z] Time:          Mon Mar 16 2020 20:47:46 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-17T02:47:46.040Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:47:46.040Z] 
+[debug] [2020-03-17T02:47:46.046Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-17T02:47:46.046Z] > authorizing via signed-in user
+[debug] [2020-03-17T02:47:46.047Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2020-03-17T02:47:46.048Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2020-03-17T02:47:46.557Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:47:46.561Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah  
+ 
+[debug] [2020-03-17T02:47:46.777Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah'...
+[info] 
+[debug] [2020-03-17T02:47:46.790Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah/webApps/-/config  
+ 
+[debug] [2020-03-17T02:47:47.189Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "10" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions" for Cloud Functions...
+[debug] [2020-03-17T02:47:48.846Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:47:48.846Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:47:48.846Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:47:48.846Z] [worker-~diagnostic~-5056246e-f2ed-46ed-8570-2b74ecdbe92a]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\4512
+[debug] [2020-03-17T02:47:48.846Z] [worker-~diagnostic~-5056246e-f2ed-46ed-8570-2b74ecdbe92a]: BUSY
+[debug] [2020-03-17T02:47:49.119Z] [runtime-status] [4512] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:47:49.119Z] [runtime-status] [4512] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:47:49.123Z] [runtime-status] [4512] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:47:49.125Z] [runtime-status] [4512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:47:49.143Z] [worker-~diagnostic~-5056246e-f2ed-46ed-8570-2b74ecdbe92a]: exited
+[debug] [2020-03-17T02:47:49.143Z] [worker-~diagnostic~-5056246e-f2ed-46ed-8570-2b74ecdbe92a]: FINISHED
+[debug] [2020-03-17T02:48:00.944Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:48:01.959Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:48:01.964Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:48:01.964Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:48:01.964Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:48:01.964Z] [worker-~diagnostic~-957c1bac-3840-40c3-8690-7783bad3971b]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\14176
+[debug] [2020-03-17T02:48:01.964Z] [worker-~diagnostic~-957c1bac-3840-40c3-8690-7783bad3971b]: BUSY
+[debug] [2020-03-17T02:48:02.225Z] [runtime-status] [14176] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:48:02.226Z] [runtime-status] [14176] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:48:02.229Z] [runtime-status] [14176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:48:02.230Z] [runtime-status] [14176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:48:02.247Z] [worker-~diagnostic~-957c1bac-3840-40c3-8690-7783bad3971b]: exited
+[debug] [2020-03-17T02:48:02.248Z] [worker-~diagnostic~-957c1bac-3840-40c3-8690-7783bad3971b]: FINISHED
+[debug] [2020-03-17T02:48:05.919Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:48:05.920Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-17T02:48:05.920Z] CLI Version:   7.15.0
+[debug] [2020-03-17T02:48:05.920Z] Platform:      win32
+[debug] [2020-03-17T02:48:05.921Z] Node Version:  v12.16.1
+[debug] [2020-03-17T02:48:05.921Z] Time:          Mon Mar 16 2020 20:48:05 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-17T02:48:05.921Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:48:05.921Z] 
+[debug] [2020-03-17T02:48:05.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-17T02:48:05.930Z] > authorizing via signed-in user
+[debug] [2020-03-17T02:48:05.930Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2020-03-17T02:48:05.931Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2020-03-17T02:48:06.201Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:48:06.202Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah  
+ 
+[debug] [2020-03-17T02:48:06.403Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah'...
+[info] 
+[debug] [2020-03-17T02:48:06.408Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah/webApps/-/config  
+ 
+[debug] [2020-03-17T02:48:06.660Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Using node@12 from host.
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions" for Cloud Functions...
+[debug] [2020-03-17T02:48:08.443Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:48:08.443Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:48:08.443Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:48:08.443Z] [worker-~diagnostic~-f868cd52-5c86-4b62-aae9-80c9186c862d]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\18160
+[debug] [2020-03-17T02:48:08.443Z] [worker-~diagnostic~-f868cd52-5c86-4b62-aae9-80c9186c862d]: BUSY
+[debug] [2020-03-17T02:48:08.705Z] [runtime-status] [18160] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:48:08.705Z] [runtime-status] [18160] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:48:08.708Z] [runtime-status] [18160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:48:08.710Z] [runtime-status] [18160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:48:08.727Z] [worker-~diagnostic~-f868cd52-5c86-4b62-aae9-80c9186c862d]: exited
+[debug] [2020-03-17T02:48:08.727Z] [worker-~diagnostic~-f868cd52-5c86-4b62-aae9-80c9186c862d]: FINISHED
+[debug] [2020-03-17T02:48:15.858Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:48:16.883Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:48:16.899Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:48:16.899Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:48:16.899Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:48:16.899Z] [worker-~diagnostic~-ad6dda86-824a-468b-864e-f3f53c06b018]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\16024
+[debug] [2020-03-17T02:48:16.899Z] [worker-~diagnostic~-ad6dda86-824a-468b-864e-f3f53c06b018]: BUSY
+[debug] [2020-03-17T02:48:17.175Z] [runtime-status] [16024] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:48:17.176Z] [runtime-status] [16024] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:48:17.179Z] [runtime-status] [16024] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:48:17.181Z] [runtime-status] [16024] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:48:17.199Z] [worker-~diagnostic~-ad6dda86-824a-468b-864e-f3f53c06b018]: exited
+[debug] [2020-03-17T02:48:17.199Z] [worker-~diagnostic~-ad6dda86-824a-468b-864e-f3f53c06b018]: FINISHED
+[debug] [2020-03-17T02:48:18.870Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:48:19.873Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:48:19.885Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:48:19.885Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:48:19.885Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:48:19.886Z] [worker-~diagnostic~-ee88cf92-d8d3-40fb-86c2-172db3959d03]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\10084
+[debug] [2020-03-17T02:48:19.886Z] [worker-~diagnostic~-ee88cf92-d8d3-40fb-86c2-172db3959d03]: BUSY
+[debug] [2020-03-17T02:48:20.168Z] [runtime-status] [10084] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:48:20.169Z] [runtime-status] [10084] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:48:20.172Z] [runtime-status] [10084] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:48:20.174Z] [runtime-status] [10084] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:48:20.191Z] [worker-~diagnostic~-ee88cf92-d8d3-40fb-86c2-172db3959d03]: exited
+[debug] [2020-03-17T02:48:20.191Z] [worker-~diagnostic~-ee88cf92-d8d3-40fb-86c2-172db3959d03]: FINISHED
+[debug] [2020-03-17T02:48:20.958Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:48:21.959Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-17T02:48:21.962Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:48:21.962Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:48:21.963Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:48:21.963Z] [worker-~diagnostic~-8802d28f-cab4-4d2b-b977-af399d1571dd]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\10860
+[debug] [2020-03-17T02:48:21.963Z] [worker-~diagnostic~-8802d28f-cab4-4d2b-b977-af399d1571dd]: BUSY
+[debug] [2020-03-17T02:48:22.228Z] [runtime-status] [10860] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:48:22.229Z] [runtime-status] [10860] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:48:22.232Z] [runtime-status] [10860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:48:22.235Z] [runtime-status] [10860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:48:22.254Z] [worker-~diagnostic~-8802d28f-cab4-4d2b-b977-af399d1571dd]: exited
+[debug] [2020-03-17T02:48:22.254Z] [worker-~diagnostic~-8802d28f-cab4-4d2b-b977-af399d1571dd]: FINISHED
+[debug] [2020-03-17T02:49:04.122Z] File D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\package.json changed, reloading triggers
+[debug] [2020-03-17T02:49:08.368Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:49:08.370Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-17T02:49:08.370Z] CLI Version:   7.15.0
+[debug] [2020-03-17T02:49:08.370Z] Platform:      win32
+[debug] [2020-03-17T02:49:08.370Z] Node Version:  v12.16.1
+[debug] [2020-03-17T02:49:08.370Z] Time:          Mon Mar 16 2020 20:49:08 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-17T02:49:08.370Z] ----------------------------------------------------------------------
+[debug] [2020-03-17T02:49:08.370Z] 
+[debug] [2020-03-17T02:49:08.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-17T02:49:08.379Z] > authorizing via signed-in user
+[debug] [2020-03-17T02:49:08.379Z] [iam] checking project caineandrebekah for permissions ["firebase.projects.get"]
+[debug] [2020-03-17T02:49:08.380Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah:testIamPermissions  
+
+[debug] [2020-03-17T02:49:08.666Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-17T02:49:08.667Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah  
+ 
+[debug] [2020-03-17T02:49:08.871Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah'...
+[info] 
+[debug] [2020-03-17T02:49:08.909Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caineandrebekah/webApps/-/config  
+ 
+[debug] [2020-03-17T02:49:09.187Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Using node@12 from host.
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions" for Cloud Functions...
+[debug] [2020-03-17T02:49:10.951Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-17T02:49:10.951Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-17T02:49:10.951Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-17T02:49:10.951Z] [worker-~diagnostic~-6f107ad2-6bed-4f6f-87e0-d4b42a937386]: Assigning socketPath: \\?\pipe\D:\Caine\Google Drive\💻 dev\projects\caineandrebekah\caineandrebekah\functions\6080
+[debug] [2020-03-17T02:49:10.951Z] [worker-~diagnostic~-6f107ad2-6bed-4f6f-87e0-d4b42a937386]: BUSY
+[debug] [2020-03-17T02:49:11.221Z] [runtime-status] [6080] Functions runtime initialized. {"cwd":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions","node_version":"12.16.1"}
+[debug] [2020-03-17T02:49:11.221Z] [runtime-status] [6080] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-17T02:49:11.224Z] [runtime-status] [6080] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-17T02:49:11.226Z] [runtime-status] [6080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"2.0.5","resolution":"D:\\Caine\\Google Drive\\💻 dev\\projects\\caineandrebekah\\caineandrebekah\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be version >3.0.0 so your version is too old. You can probably fix this by running "npm install firebase-functions@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-17T02:49:11.244Z] [worker-~diagnostic~-6f107ad2-6bed-4f6f-87e0-d4b42a937386]: exited
+[debug] [2020-03-17T02:49:11.244Z] [worker-~diagnostic~-6f107ad2-6bed-4f6f-87e0-d4b42a937386]: FINISHED
